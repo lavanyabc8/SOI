@@ -1,0 +1,179 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Different Definitions of the Sphere of Influence (SOI)",
+    "section": "",
+    "text": "The term Sphere of Influence (SOI) is not uniquely defined in orbital mechanics. Different definitions are used depending on the physical problem being studied.\nFor example,\n\nLaplace SOI is used in interplanetary trajectory design.\nHill Sphere is used in orbital stability.\nEqual-force radius compares gravitational forces.\nRoche Limit concerns tidal disruption.\n\nEach definition answers a different physical question.\n\n\n\n\n\n\nNote\n\n\n\nThere is no single universal definition of the Sphere of Influence. The appropriate definition depends on the application.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#formula",
+    "href": "index.html#formula",
+    "title": "Different Definitions of the Sphere of Influence (SOI)",
+    "section": "2.1 Formula",
+    "text": "2.1 Formula\n\\[\nR_{SOI}\n=\na\\left(\\frac{m_p}{m_s}\\right)^{2/5}\n\\]\nwhere\n\n\\(a\\) = orbital radius of the planet about the Sun\n\\(m_p\\) = mass of the planet\n\\(m_s\\) = mass of the Sun",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#physical-meaning",
+    "href": "index.html#physical-meaning",
+    "title": "Different Definitions of the Sphere of Influence (SOI)",
+    "section": "2.2 Physical Meaning",
+    "text": "2.2 Physical Meaning\nThe Laplace SOI is not the distance where the Sun’s gravity equals the planet’s gravity.\nInstead, it is the distance where\n\nthe planet-centered two-body approximation becomes more accurate than the heliocentric two-body approximation.\n\nThis definition is obtained by comparing\n\\[\n\\frac{p_s}{a_p}\n\\]\nand\n\\[\n\\frac{P_p}{A_s}\n\\]\nand setting them equal.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#applications",
+    "href": "index.html#applications",
+    "title": "Different Definitions of the Sphere of Influence (SOI)",
+    "section": "2.3 Applications",
+    "text": "2.3 Applications\n\nPatched-conic approximation\nInterplanetary trajectory design\nMission analysis\nCurtis\nBate, Mueller & White\n\n\n\n\n\n\n\nImportant\n\n\n\nThe Laplace SOI is a model-selection boundary, not a physical boundary.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#formula-1",
+    "href": "index.html#formula-1",
+    "title": "Different Definitions of the Sphere of Influence (SOI)",
+    "section": "3.1 Formula",
+    "text": "3.1 Formula\n\\[\nR_H\n=\na\n\\left(\n\\frac{m_p}{3m_s}\n\\right)^{1/3}\n\\]\nNotice\n\nexponent = \\(\\frac13\\)\nfactor = 3",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#physical-meaning-1",
+    "href": "index.html#physical-meaning-1",
+    "title": "Different Definitions of the Sphere of Influence (SOI)",
+    "section": "3.2 Physical Meaning",
+    "text": "3.2 Physical Meaning\nThe Hill Sphere represents the region where\n\na satellite can remain gravitationally bound to the planet despite the gravitational influence of the Sun.\n\nUnlike Laplace’s SOI, this has a genuine dynamical interpretation.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#example",
+    "href": "index.html#example",
+    "title": "Different Definitions of the Sphere of Influence (SOI)",
+    "section": "3.3 Example",
+    "text": "3.3 Example\nFor Earth,\n\nLaplace SOI\n\n\\[\n\\approx 925,000\\text{ km}\n\\]\n\nHill Sphere\n\n\\[\n\\approx 1.5\\times10^6\\text{ km}\n\\]\nThe Hill Sphere is considerably larger.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#applications-1",
+    "href": "index.html#applications-1",
+    "title": "Different Definitions of the Sphere of Influence (SOI)",
+    "section": "3.4 Applications",
+    "text": "3.4 Applications\n\nSatellite stability\nNatural satellites\nLagrange points\nCR3BP\nLong-term orbital dynamics",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#formula-2",
+    "href": "index.html#formula-2",
+    "title": "Different Definitions of the Sphere of Influence (SOI)",
+    "section": "4.1 Formula",
+    "text": "4.1 Formula\nStarting with\n\\[\n\\frac{GM_p}{r^2}\n=\n\\frac{GM_s}{R^2}\n\\]\ngives\n\\[\nr\n=\nR\n\\sqrt{\\frac{m_p}{m_s}}\n\\]",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#physical-meaning-2",
+    "href": "index.html#physical-meaning-2",
+    "title": "Different Definitions of the Sphere of Influence (SOI)",
+    "section": "4.2 Physical Meaning",
+    "text": "4.2 Physical Meaning\nAt this distance,\n\\[\nF_{\\text{planet}}\n=\nF_{\\text{Sun}}\n\\]",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#example-1",
+    "href": "index.html#example-1",
+    "title": "Different Definitions of the Sphere of Influence (SOI)",
+    "section": "4.3 Example",
+    "text": "4.3 Example\nFor Earth,\n\\[\nr\n\\approx\n259,000\\text{ km}\n\\]\nwhich is much smaller than the Laplace SOI.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#why-isnt-it-used",
+    "href": "index.html#why-isnt-it-used",
+    "title": "Different Definitions of the Sphere of Influence (SOI)",
+    "section": "4.4 Why isn’t it used?",
+    "text": "4.4 Why isn’t it used?\nAlthough the forces become equal,\nthis does not imply equal orbital influence.\nThe planet and spacecraft are both accelerating toward the Sun, so most of the Sun’s gravity cancels when studying motion relative to the planet.\nOnly the differential (tidal) acceleration affects the relative motion.\nTherefore, the equal-force radius has limited usefulness in orbital mechanics.\n\n\n\n\n\n\nWarning\n\n\n\nEqual gravitational force does not imply equal orbital influence.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#formula-3",
+    "href": "index.html#formula-3",
+    "title": "Different Definitions of the Sphere of Influence (SOI)",
+    "section": "5.1 Formula",
+    "text": "5.1 Formula\n\\[\nR_R\n\\approx\n2.44R_p\n\\left(\n\\frac{\\rho_p}{\\rho_s}\n\\right)^{1/3}\n\\]\nwhere\n\n\\(R_p\\) = radius of the primary body\n\\(\\rho_p\\) = density of the primary\n\\(\\rho_s\\) = density of the satellite",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#physical-meaning-3",
+    "href": "index.html#physical-meaning-3",
+    "title": "Different Definitions of the Sphere of Influence (SOI)",
+    "section": "5.2 Physical Meaning",
+    "text": "5.2 Physical Meaning\nInside the Roche Limit,\ntidal forces exceed the self-gravity of the satellite, causing it to break apart.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#applications-2",
+    "href": "index.html#applications-2",
+    "title": "Different Definitions of the Sphere of Influence (SOI)",
+    "section": "5.3 Applications",
+    "text": "5.3 Applications\n\nPlanetary rings\nTidal disruption\nComets\nPlanetary science",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#applications-3",
+    "href": "index.html#applications-3",
+    "title": "Different Definitions of the Sphere of Influence (SOI)",
+    "section": "6.1 Applications",
+    "text": "6.1 Applications\n\nAsteroid capture\nPlanet formation\nTemporary gravitational capture",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#applications-4",
+    "href": "index.html#applications-4",
+    "title": "Different Definitions of the Sphere of Influence (SOI)",
+    "section": "8.1 Applications",
+    "text": "8.1 Applications\n\nHigh-fidelity trajectory propagation\nNASA\nESA\nJPL mission design",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  }
+]
