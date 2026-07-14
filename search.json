@@ -2,11 +2,11 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "title": "Different Definitions of the Sphere of Influence (SOI)",
     "section": "",
-    "text": "Based primarily on the works of John W. Dankanich, O’Reilly et al., and Miller et al.",
+    "text": "The term Sphere of Influence (SOI) is not uniquely defined in orbital mechanics. Different definitions are used depending on the physical problem being studied.\nFor example,\n\nLaplace SOI is used in interplanetary trajectory design.\nHill Sphere is used in orbital stability.\nEqual-force radius compares gravitational forces.\nRoche Limit concerns tidal disruption.\n\nEach definition answers a different physical question.\n\n\n\n\n\n\nNote\n\n\n\nThere is no single universal definition of the Sphere of Influence. The appropriate definition depends on the application.",
     "crumbs": [
-      "Home"
+      "SOI"
     ]
   },
   {
@@ -16,7 +16,7 @@
     "section": "2.1 Formula",
     "text": "2.1 Formula\n\\[\nR_{SOI}\n=\na\\left(\\frac{m_p}{m_s}\\right)^{2/5}\n\\]\nwhere\n\n\\(a\\) = orbital radius of the planet about the Sun\n\\(m_p\\) = mass of the planet\n\\(m_s\\) = mass of the Sun",
     "crumbs": [
-      "Home"
+      "SOI"
     ]
   },
   {
@@ -26,7 +26,7 @@
     "section": "2.2 Physical Meaning",
     "text": "2.2 Physical Meaning\nThe Laplace SOI is not the distance where the Sun’s gravity equals the planet’s gravity.\nInstead, it is the distance where\n\nthe planet-centered two-body approximation becomes more accurate than the heliocentric two-body approximation.\n\nThis definition is obtained by comparing\n\\[\n\\frac{p_s}{a_p}\n\\]\nand\n\\[\n\\frac{P_p}{A_s}\n\\]\nand setting them equal.",
     "crumbs": [
-      "Home"
+      "SOI"
     ]
   },
   {
@@ -36,7 +36,7 @@
     "section": "2.3 Applications",
     "text": "2.3 Applications\n\nPatched-conic approximation\nInterplanetary trajectory design\nMission analysis\nCurtis\nBate, Mueller & White\n\n\n\n\n\n\n\nImportant\n\n\n\nThe Laplace SOI is a model-selection boundary, not a physical boundary.",
     "crumbs": [
-      "Home"
+      "SOI"
     ]
   },
   {
@@ -46,7 +46,7 @@
     "section": "3.1 Formula",
     "text": "3.1 Formula\n\\[\nR_H\n=\na\n\\left(\n\\frac{m_p}{3m_s}\n\\right)^{1/3}\n\\]\nNotice\n\nexponent = \\(\\frac13\\)\nfactor = 3",
     "crumbs": [
-      "Home"
+      "SOI"
     ]
   },
   {
@@ -56,7 +56,7 @@
     "section": "3.2 Physical Meaning",
     "text": "3.2 Physical Meaning\nThe Hill Sphere represents the region where\n\na satellite can remain gravitationally bound to the planet despite the gravitational influence of the Sun.\n\nUnlike Laplace’s SOI, this has a genuine dynamical interpretation.",
     "crumbs": [
-      "Home"
+      "SOI"
     ]
   },
   {
@@ -66,7 +66,7 @@
     "section": "3.3 Example",
     "text": "3.3 Example\nFor Earth,\n\nLaplace SOI\n\n\\[\n\\approx 925,000\\text{ km}\n\\]\n\nHill Sphere\n\n\\[\n\\approx 1.5\\times10^6\\text{ km}\n\\]\nThe Hill Sphere is considerably larger.",
     "crumbs": [
-      "Home"
+      "SOI"
     ]
   },
   {
@@ -76,7 +76,7 @@
     "section": "3.4 Applications",
     "text": "3.4 Applications\n\nSatellite stability\nNatural satellites\nLagrange points\nCR3BP\nLong-term orbital dynamics",
     "crumbs": [
-      "Home"
+      "SOI"
     ]
   },
   {
@@ -86,7 +86,7 @@
     "section": "4.1 Formula",
     "text": "4.1 Formula\nStarting with\n\\[\n\\frac{GM_p}{r^2}\n=\n\\frac{GM_s}{R^2}\n\\]\ngives\n\\[\nr\n=\nR\n\\sqrt{\\frac{m_p}{m_s}}\n\\]",
     "crumbs": [
-      "Home"
+      "SOI"
     ]
   },
   {
@@ -96,7 +96,7 @@
     "section": "4.2 Physical Meaning",
     "text": "4.2 Physical Meaning\nAt this distance,\n\\[\nF_{\\text{planet}}\n=\nF_{\\text{Sun}}\n\\]",
     "crumbs": [
-      "Home"
+      "SOI"
     ]
   },
   {
@@ -106,7 +106,7 @@
     "section": "4.3 Example",
     "text": "4.3 Example\nFor Earth,\n\\[\nr\n\\approx\n259,000\\text{ km}\n\\]\nwhich is much smaller than the Laplace SOI.",
     "crumbs": [
-      "Home"
+      "SOI"
     ]
   },
   {
@@ -116,7 +116,7 @@
     "section": "4.4 Why isn’t it used?",
     "text": "4.4 Why isn’t it used?\nAlthough the forces become equal,\nthis does not imply equal orbital influence.\nThe planet and spacecraft are both accelerating toward the Sun, so most of the Sun’s gravity cancels when studying motion relative to the planet.\nOnly the differential (tidal) acceleration affects the relative motion.\nTherefore, the equal-force radius has limited usefulness in orbital mechanics.\n\n\n\n\n\n\nWarning\n\n\n\nEqual gravitational force does not imply equal orbital influence.",
     "crumbs": [
-      "Home"
+      "SOI"
     ]
   },
   {
@@ -126,7 +126,7 @@
     "section": "5.1 Formula",
     "text": "5.1 Formula\n\\[\nR_R\n\\approx\n2.44R_p\n\\left(\n\\frac{\\rho_p}{\\rho_s}\n\\right)^{1/3}\n\\]\nwhere\n\n\\(R_p\\) = radius of the primary body\n\\(\\rho_p\\) = density of the primary\n\\(\\rho_s\\) = density of the satellite",
     "crumbs": [
-      "Home"
+      "SOI"
     ]
   },
   {
@@ -136,7 +136,7 @@
     "section": "5.2 Physical Meaning",
     "text": "5.2 Physical Meaning\nInside the Roche Limit,\ntidal forces exceed the self-gravity of the satellite, causing it to break apart.",
     "crumbs": [
-      "Home"
+      "SOI"
     ]
   },
   {
@@ -146,7 +146,7 @@
     "section": "5.3 Applications",
     "text": "5.3 Applications\n\nPlanetary rings\nTidal disruption\nComets\nPlanetary science",
     "crumbs": [
-      "Home"
+      "SOI"
     ]
   },
   {
@@ -156,7 +156,7 @@
     "section": "6.1 Applications",
     "text": "6.1 Applications\n\nAsteroid capture\nPlanet formation\nTemporary gravitational capture",
     "crumbs": [
-      "Home"
+      "SOI"
     ]
   },
   {
@@ -166,7 +166,7 @@
     "section": "8.1 Applications",
     "text": "8.1 Applications\n\nHigh-fidelity trajectory propagation\nNASA\nESA\nJPL mission design",
     "crumbs": [
-      "Home"
+      "SOI"
     ]
   },
   {
@@ -624,6 +624,466 @@
     "text": "Additional References\n\nSutton, G. P., and Biblarz, O. Rocket Propulsion Elements.\nWertz, J. R., Everett, D. F., and Puschell, J. J. Space Mission Engineering: The New SMAD.\nChoueiri, E. Y. A Critical History of Electric Propulsion.\nJahn, R. G., and Choueiri, E. Y. Electric Propulsion.\nFortescue, P., Stark, J., and Swinerd, G. Spacecraft Systems Engineering.",
     "crumbs": [
       "Home"
+    ]
+  },
+  {
+    "objectID": "LTP.html",
+    "href": "LTP.html",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "",
+    "text": "Based primarily on the works of John W. Dankanich, O’Reilly et al., and Miller et al.",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#comprehensive-technical-report",
+    "href": "LTP.html#comprehensive-technical-report",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "",
+    "text": "Based primarily on the works of John W. Dankanich, O’Reilly et al., and Miller et al.",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#definition",
+    "href": "LTP.html#definition",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "Definition",
+    "text": "Definition\nLow-thrust propulsion refers to propulsion systems producing accelerations much smaller than gravitational acceleration.\nTypically:\n\\[\na_T \\ll g_0\n\\]\nwhere\n\\[\ng_0 = 9.81 \\, m/s^2\n\\]\nTypical thrust levels:\n\n\n\nSystem\nThrust\n\n\n\n\nChemical Rocket\n\\(10^3 - 10^7\\) N\n\n\nHall Thruster\n0.01–5 N\n\n\nIon Thruster\n0.001–1 N\n\n\nElectrospray\nμN–mN\n\n\nFEEP\nμN",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#rocket-thrust-equation",
+    "href": "LTP.html#rocket-thrust-equation",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "Rocket Thrust Equation",
+    "text": "Rocket Thrust Equation\nThe general thrust equation is\n\\[\nT=\\dot m v_e +(P_e-P_a)A_e\n\\]\nwhere\n\n\\(T\\) = thrust\n\\(\\dot m\\) = mass flow rate\n\\(v_e\\) = exhaust velocity\n\\(P_e\\) = exit pressure\n\\(P_a\\) = ambient pressure\n\\(A_e\\) = nozzle exit area\n\nFor electric propulsion operating in vacuum,\n\\[\nT \\approx \\dot m v_e\n\\]",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#specific-impulse",
+    "href": "LTP.html#specific-impulse",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "2.3 Specific Impulse",
+    "text": "2.3 Specific Impulse\nSpecific impulse is a measure of propellant efficiency.\n\\[\nI_{sp}=\\frac{v_e}{g_0}\n\\]\nHigher specific impulse means:\n\nLess propellant consumption\nGreater mission capability\nIncreased payload fraction\n\nTypical values:\n\n\n\nPropulsion Type\nSpecific Impulse (\\(I_{sp}\\))\n\n\n\n\nChemical\n250–450 s\n\n\nResistojet\n300–500 s\n\n\nArcjet\n500–1000 s\n\n\nHall Thruster\n1000–2500 s\n\n\nIon Thruster\n2000–10000 s\n\n\nFEEP\n&gt;10000 s",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#a.-electrothermal-propulsion",
+    "href": "LTP.html#a.-electrothermal-propulsion",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "A. Electrothermal Propulsion",
+    "text": "A. Electrothermal Propulsion\nElectrical energy heats the propellant before expansion through a nozzle.",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#b.-electrostatic-propulsion",
+    "href": "LTP.html#b.-electrostatic-propulsion",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "B. Electrostatic Propulsion",
+    "text": "B. Electrostatic Propulsion\nElectric fields accelerate ions directly.",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#c.-electromagnetic-propulsion",
+    "href": "LTP.html#c.-electromagnetic-propulsion",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "C. Electromagnetic Propulsion",
+    "text": "C. Electromagnetic Propulsion\nElectric and magnetic fields accelerate plasma.",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#d.-advanced-concepts",
+    "href": "LTP.html#d.-advanced-concepts",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "D. Advanced Concepts",
+    "text": "D. Advanced Concepts\n\nSolar sails\nNuclear electric propulsion\nElectrospray propulsion\nHybrid propulsion systems",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#principle",
+    "href": "LTP.html#principle",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "Principle",
+    "text": "Principle\nElectrical energy is used to increase the thermal energy of the propellant.\nThe heated gas expands through a conventional nozzle to produce thrust.\n\\[\nT \\propto \\dot m v_e\n\\]\nElectrothermal systems generally provide moderate specific impulse with relatively simple designs.",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#resistojets",
+    "href": "LTP.html#resistojets",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "5.1 Resistojets",
+    "text": "5.1 Resistojets\n\nWorking Principle\nElectrical resistance heaters raise the propellant temperature.\nThe heated gas expands through a converging-diverging nozzle.\n\n\nCommon Propellants\n\nNitrogen\nAmmonia\nWater vapor\nXenon\n\n\n\nAdvantages\n\nSimple design\nHigh reliability\nLow cost\nFlight heritage\n\n\n\nDisadvantages\n\nLimited performance\nLower specific impulse than other electric propulsion systems\n\n\n\nTypical Performance\n\n\n\nParameter\nValue\n\n\n\n\nThrust\nmN–N\n\n\nSpecific Impulse\n300–500 s",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#arcjets",
+    "href": "LTP.html#arcjets",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "5.2 Arcjets",
+    "text": "5.2 Arcjets\n\nWorking Principle\nAn electrical arc heats the propellant to extremely high temperatures.\nThe superheated gas then expands through a nozzle.\n\n\nAdvantages\n\nHigher performance than resistojets\nMature technology\n\n\n\nDisadvantages\n\nElectrode erosion\nIncreased power requirements\n\n\n\nTypical Performance\n\n\n\nParameter\nValue\n\n\n\n\nSpecific Impulse\n500–1000 s\n\n\nThrust\n0.01–1 N\n\n\n\n\n\nApplications\n\nGeostationary satellite station keeping\nOrbit transfer",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#gridded-ion-thrusters",
+    "href": "LTP.html#gridded-ion-thrusters",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "6.1 Gridded Ion Thrusters",
+    "text": "6.1 Gridded Ion Thrusters\n\nWorking Principle\n\nNeutral xenon gas is ionized.\nPositive ions are extracted.\nElectrostatic grids accelerate the ions.\n\nThe exhaust velocity is\n\\[\nv_e = \\sqrt{\\frac{2qV}{m}}\n\\]\nwhere:\n\n\\(q\\) = ion charge\n\\(V\\) = accelerating voltage\n\\(m\\) = ion mass\n\n\n\nAdvantages\n\nExtremely high efficiency\nHigh specific impulse\nExcellent for deep-space missions\n\n\n\nDisadvantages\n\nLow thrust levels\nGrid erosion\nComplex power processing requirements\n\n\n\nTypical Performance\n\n\n\nParameter\nValue\n\n\n\n\nSpecific Impulse\n2000–10000 s\n\n\nThrust\nmN–N\n\n\n\n\n\nApplications\n\nDeep Space 1\nDawn\nBepiColombo",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#hall-effect-thrusters",
+    "href": "LTP.html#hall-effect-thrusters",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "6.2 Hall Effect Thrusters",
+    "text": "6.2 Hall Effect Thrusters\n\nWorking Principle\nA radial magnetic field traps electrons inside the discharge chamber.\nThe Lorentz force acting on charged particles is\n\\[\n\\mathbf{F}=q(\\mathbf{E}+\\mathbf{v}\\times\\mathbf{B})\n\\]\nThe trapped electrons ionize the propellant, while ions are accelerated axially to produce thrust.\n\n\nAdvantages\n\nHigher thrust density than ion thrusters\nSimpler architecture\nMature technology\n\n\n\nDisadvantages\n\nLower specific impulse than gridded ion thrusters\nChannel erosion\n\n\n\nTypical Performance\n\n\n\nParameter\nValue\n\n\n\n\nSpecific Impulse\n1000–2500 s\n\n\nThrust\n10 mN–5 N\n\n\n\n\n\nApplications\n\nGEO satellites\nOrbit raising\nConstellation maintenance",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#electrospray-thrusters",
+    "href": "LTP.html#electrospray-thrusters",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "6.3 Electrospray Thrusters",
+    "text": "6.3 Electrospray Thrusters\n\nWorking Principle\nElectrostatic forces extract charged droplets or ions from a conductive liquid.\nA Taylor cone forms at the emitter tip.\nThe electric field is approximately\n\\[\nE = \\frac{V}{d}\n\\]\nwhere:\n\n\\(V\\) = applied voltage\n\\(d\\) = emitter spacing\n\n\n\nAdvantages\n\nExtremely compact\nSuitable for CubeSats\nScalable architecture\n\n\n\nDisadvantages\n\nLimited thrust\nManufacturing complexity\n\n\n\nTypical Performance\n\n\n\nParameter\nValue\n\n\n\n\nThrust\nμN–mN\n\n\nSpecific Impulse\n500–3000 s",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#feep-thrusters",
+    "href": "LTP.html#feep-thrusters",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "6.4 FEEP Thrusters",
+    "text": "6.4 FEEP Thrusters\n\nField Emission Electric Propulsion\nFEEP thrusters accelerate ions extracted directly from liquid metals.\n\n\nTypical Propellants\n\nIndium\nCesium\n\n\n\nAdvantages\n\nExtremely high precision\nVery high specific impulse\n\n\n\nApplications\n\nPrecision formation flying\nDrag-free spacecraft\nScientific missions\n\n\n\nTypical Performance\n\n\n\nParameter\nValue\n\n\n\n\nSpecific Impulse\n4000–12000 s\n\n\nThrust\nμN",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#pulsed-plasma-thrusters-ppt",
+    "href": "LTP.html#pulsed-plasma-thrusters-ppt",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "7.1 Pulsed Plasma Thrusters (PPT)",
+    "text": "7.1 Pulsed Plasma Thrusters (PPT)\n\nWorking Principle\nA capacitor discharges through a solid Teflon propellant.\nThe resulting plasma is accelerated electromagnetically.\n\n\nAdvantages\n\nVery simple\nCompact\nProven technology\n\n\n\nDisadvantages\n\nLow efficiency\nLimited thrust\n\n\n\nTypical Performance\n\n\n\nParameter\nValue\n\n\n\n\nSpecific Impulse\n500–2000 s\n\n\nThrust\nμN–mN",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#magnetoplasmadynamic-thrusters-mpd",
+    "href": "LTP.html#magnetoplasmadynamic-thrusters-mpd",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "7.2 Magnetoplasmadynamic Thrusters (MPD)",
+    "text": "7.2 Magnetoplasmadynamic Thrusters (MPD)\n\nWorking Principle\nPlasma carrying electrical current interacts with magnetic fields.\nThe resulting Lorentz force accelerates the plasma.\n\\[\n\\mathbf{F}=\\mathbf{J}\\times\\mathbf{B}\n\\]\nwhere:\n\n\\(\\mathbf{J}\\) = current density\n\\(\\mathbf{B}\\) = magnetic field\n\n\n\nAdvantages\n\nVery high thrust\nVery high specific impulse\n\n\n\nDisadvantages\n\nExtremely high power requirements\n\nTypical power levels:\n\\[\n100\\,kW - 1\\,MW\n\\]\n\n\nPotential Applications\n\nHuman Mars missions\nCargo transport\nDeep-space exploration",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#solar-sails",
+    "href": "LTP.html#solar-sails",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "8.1 Solar Sails",
+    "text": "8.1 Solar Sails\n\nPrinciple\nSolar sails utilize momentum transfer from sunlight.\nThe solar radiation pressure is\n\\[\nP=\\frac{2S}{c}\n\\]\nwhere:\n\n\\(S\\) = solar flux\n\\(c\\) = speed of light\n\n\n\nAdvantages\n\nNo propellant required\nUnlimited mission duration\n\n\n\nDisadvantages\n\nExtremely low acceleration\nLarge sail structures required",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#nuclear-electric-propulsion-nep",
+    "href": "LTP.html#nuclear-electric-propulsion-nep",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "8.2 Nuclear Electric Propulsion (NEP)",
+    "text": "8.2 Nuclear Electric Propulsion (NEP)\n\nPrinciple\nA nuclear reactor generates electrical power.\nThe electricity drives electric thrusters.\n\n\nAdvantages\n\nHigh available power\nDeep-space capability\nIndependent of solar distance\n\n\n\nApplications\n\nMars missions\nOuter planet exploration\nCargo transportation",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#direct-methods",
+    "href": "LTP.html#direct-methods",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "10.1 Direct Methods",
+    "text": "10.1 Direct Methods\nThe trajectory is divided into multiple segments.\nOptimization variables include:\n\nThrust magnitude\nThrust direction\nFlight time\n\n\nAdvantages\n\nNumerically robust\nSuitable for complex missions\nWidely used",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#indirect-methods",
+    "href": "LTP.html#indirect-methods",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "10.2 Indirect Methods",
+    "text": "10.2 Indirect Methods\nBased on optimal control theory.\n\nPontryagin’s Maximum Principle\nProvides necessary conditions for optimality.\n\n\nAdvantages\n\nHighly accurate\nProduces optimal solutions\n\n\n\nDisadvantages\n\nSensitive to initial guesses\nDifficult implementation",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#spiral-orbit-raising",
+    "href": "LTP.html#spiral-orbit-raising",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "Spiral Orbit Raising",
+    "text": "Spiral Orbit Raising\nInstead of a Hohmann transfer, the spacecraft gradually spirals outward.\nApplications:\n\nLEO to GEO transfer\nOrbit raising",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#interplanetary-transfers",
+    "href": "LTP.html#interplanetary-transfers",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "Interplanetary Transfers",
+    "text": "Interplanetary Transfers\nContinuous thrust changes:\n\nOrbital energy\nInclination\nEccentricity\n\nsimultaneously.",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#asteroid-rendezvous",
+    "href": "LTP.html#asteroid-rendezvous",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "Asteroid Rendezvous",
+    "text": "Asteroid Rendezvous\nLow-thrust propulsion allows gradual matching of an asteroid’s velocity and orbit.",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#station-keeping",
+    "href": "LTP.html#station-keeping",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "Station Keeping",
+    "text": "Station Keeping\nCompensates for:\n\nSolar radiation pressure\nAtmospheric drag\nGravitational perturbations",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#orbit-raising",
+    "href": "LTP.html#orbit-raising",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "Orbit Raising",
+    "text": "Orbit Raising\nUsed extensively by commercial communications satellites.",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#formation-flying",
+    "href": "LTP.html#formation-flying",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "Formation Flying",
+    "text": "Formation Flying\nMaintains precise relative positioning between spacecraft.",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#collision-avoidance",
+    "href": "LTP.html#collision-avoidance",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "Collision Avoidance",
+    "text": "Collision Avoidance\nProvides efficient orbit adjustments in congested orbital environments.",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#deep-space-exploration",
+    "href": "LTP.html#deep-space-exploration",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "Deep-Space Exploration",
+    "text": "Deep-Space Exploration\nEnabled missions such as:\n\nSMART-1\nDeep Space 1\nDawn\nBepiColombo",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#power-limitations",
+    "href": "LTP.html#power-limitations",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "14.1 Power Limitations",
+    "text": "14.1 Power Limitations\nElectric propulsion performance depends strongly on available power.\nThe thrust-to-power relationship can be approximated as\n\\[\nT=\\frac{2\\eta P}{v_e}\n\\]\nwhere:\n\n\\(\\eta\\) = efficiency\n\\(P\\) = electrical power\n\\(v_e\\) = exhaust velocity\n\nHigher exhaust velocity generally requires greater electrical power.",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#thermal-management",
+    "href": "LTP.html#thermal-management",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "14.2 Thermal Management",
+    "text": "14.2 Thermal Management\nPower electronics and plasma generation create significant thermal loads.\nChallenges include:\n\nRadiator sizing\nHeat rejection\nThermal control integration",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#lifetime",
+    "href": "LTP.html#lifetime",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "14.3 Lifetime",
+    "text": "14.3 Lifetime\nCommon degradation mechanisms include:\n\nGrid erosion\nCathode wear\nPlasma-induced material degradation",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#miniaturization",
+    "href": "LTP.html#miniaturization",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "14.4 Miniaturization",
+    "text": "14.4 Miniaturization\nSmall satellites require:\n\nCompact power processing units\nLightweight tanks\nIntegrated propulsion modules",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#why-are-gravity-assists-used",
+    "href": "LTP.html#why-are-gravity-assists-used",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "12.1 Why Are Gravity Assists Used?",
+    "text": "12.1 Why Are Gravity Assists Used?\nFor deep-space missions, reaching distant planets or small bodies often requires a very large heliocentric velocity change.\nExamples include:\n\nMissions to Mercury\nOuter planet exploration\nAsteroid rendezvous missions\nComet missions\n\nUsing chemical propulsion alone would require extremely large launch vehicles or impractically high propellant masses.\nA gravity assist allows a spacecraft to exchange energy and angular momentum with a planet without expending significant onboard propellant.\nIn the heliocentric frame:\n\\[\n\\mathbf{V}_{\\infty,in} \\neq \\mathbf{V}_{\\infty,out}\n\\]\nand the spacecraft can gain or lose heliocentric energy through the flyby.\nThe planet provides the energy change through its orbital motion around the Sun.\n\nBenefits of Gravity Assists\n\nLarge effective ΔV without propellant expenditure\nReduced launch mass\nIncreased payload mass\nAccess to otherwise unreachable destinations\nLower mission cost",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#why-not-use-pure-chemical-propulsion",
+    "href": "LTP.html#why-not-use-pure-chemical-propulsion",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "12.2 Why Not Use Pure Chemical Propulsion?",
+    "text": "12.2 Why Not Use Pure Chemical Propulsion?\nA purely chemical mission would require:\n\nLarge impulsive burns\nHigh propellant fractions\nLarger launch vehicles\n\nFrom the rocket equation:\n\\[\n\\Delta V = I_{sp} g_0 \\ln\\left(\\frac{m_0}{m_f}\\right)\n\\]\nA large ΔV requirement causes the mass ratio\n\\[\n\\frac{m_0}{m_f}\n\\]\nto increase exponentially.\nConsequently:\n\nPayload mass decreases\nLaunch mass increases\nMission cost rises dramatically\n\nFor missions to Mercury, Jupiter, Saturn, or beyond, a purely chemical approach may become impractical.",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#why-not-use-gravity-assists-alone",
+    "href": "LTP.html#why-not-use-gravity-assists-alone",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "12.3 Why Not Use Gravity Assists Alone?",
+    "text": "12.3 Why Not Use Gravity Assists Alone?\nGravity assists are powerful but have limitations.\nA flyby can only occur if:\n\nThe spacecraft reaches the planet.\nThe planetary alignment is favorable.\nThe encounter geometry produces the desired energy change.\n\nGravity assists alone cannot provide complete mission flexibility.\nChallenges include:\n\nLong waiting periods for launch windows\nRestricted trajectory options\nLimited control over encounter conditions\n\nTherefore, propulsion is still required to:\n\nReach the flyby planet\nCorrect trajectory errors\nAdjust flyby geometry\nPerform final rendezvous operations",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#why-combine-low-thrust-propulsion-with-gravity-assists",
+    "href": "LTP.html#why-combine-low-thrust-propulsion-with-gravity-assists",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "12.4 Why Combine Low-Thrust Propulsion with Gravity Assists?",
+    "text": "12.4 Why Combine Low-Thrust Propulsion with Gravity Assists?\nLow-thrust propulsion and gravity assists complement each other extremely well.\n\nGravity Assist Provides\n\nLarge energy changes\nMajor orbit shaping\nFree heliocentric ΔV\n\n\n\nLow-Thrust Provides\n\nContinuous trajectory control\nPrecise targeting\nOrbit adjustment between flybys\nFlexibility in launch opportunities\n\nThe combination allows missions to achieve much larger overall velocity changes than either method alone.",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#multiple-gravity-assist-mga-missions",
+    "href": "LTP.html#multiple-gravity-assist-mga-missions",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "12.5 Multiple Gravity Assist (MGA) Missions",
+    "text": "12.5 Multiple Gravity Assist (MGA) Missions\nA Multiple Gravity Assist (MGA) trajectory uses several planetary flybys.\nTypical sequence:\n\\[\nEarth \\rightarrow Venus \\rightarrow Venus \\rightarrow Mercury\n\\]\nor\n\\[\nEarth \\rightarrow Earth \\rightarrow Jupiter \\rightarrow Saturn\n\\]\nEach flyby modifies:\n\nOrbital energy\nOrbital inclination\nOrbital eccentricity\nFlight direction\n\nThe cumulative effect can produce enormous heliocentric velocity changes.",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#why-low-thrust-is-especially-useful-in-mga-missions",
+    "href": "LTP.html#why-low-thrust-is-especially-useful-in-mga-missions",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "12.6 Why Low-Thrust is Especially Useful in MGA Missions",
+    "text": "12.6 Why Low-Thrust is Especially Useful in MGA Missions\nBetween planetary encounters, a spacecraft may spend months or years in interplanetary space.\nDuring these phases, low-thrust propulsion can:\n\nModify Arrival Conditions\nThe arrival velocity at a planet can be adjusted gradually.\nThis allows:\n\nBetter flyby geometry\nImproved energy gain\nGreater mission flexibility\n\n\n\n\nExpand Launch Windows\nPure gravity-assist missions often depend on highly specific planetary alignments.\nLow-thrust propulsion can compensate for small trajectory deviations and reduce dependence on exact launch opportunities.\n\n\n\nReduce Required Flybys\nContinuous propulsion can provide part of the required ΔV.\nAs a result:\n\nFewer planetary encounters may be needed\nMission complexity decreases\n\n\n\n\nEnable Final Rendezvous\nGravity assists primarily change heliocentric velocity.\nHowever, rendezvous requires matching the target body’s velocity.\nLow-thrust propulsion is highly efficient for gradually reducing relative velocity and achieving orbit insertion.",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#comparison-with-other-mission-architectures",
+    "href": "LTP.html#comparison-with-other-mission-architectures",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "12.7 Comparison with Other Mission Architectures",
+    "text": "12.7 Comparison with Other Mission Architectures\n\n\n\n\n\n\n\n\nMethod\nAdvantages\nLimitations\n\n\n\n\nChemical Only\nFast transfers, simple operations\nHigh propellant mass\n\n\nGravity Assist Only\nVery low propellant use\nLimited flexibility\n\n\nLow-Thrust Only\nHigh efficiency, flexible\nLong transfer times\n\n\nMGA + Low-Thrust\nExtremely efficient, highly capable\nComplex trajectory design\n\n\n\nFor many deep-space missions, MGA combined with low-thrust propulsion provides the best balance between:\n\nPropellant consumption\nMission duration\nLaunch mass\nPayload capability",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#examples-of-mga-and-low-thrust-missions",
+    "href": "LTP.html#examples-of-mga-and-low-thrust-missions",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "12.8 Examples of MGA and Low-Thrust Missions",
+    "text": "12.8 Examples of MGA and Low-Thrust Missions\n\nDawn Mission\nTrajectory:\n\\[\nEarth \\rightarrow Vesta \\rightarrow Ceres\n\\]\nUsed:\n\nIon propulsion\nContinuous low-thrust spirals\nAsteroid rendezvous operations\n\nAdvantages:\n\nMultiple target visits\nLarge total ΔV\nMinimal propellant mass\n\n\n\n\nBepiColombo Mission\nTrajectory:\n\\[\nEarth \\rightarrow Venus \\rightarrow Venus \\rightarrow Mercury \\rightarrow Mercury \\rightarrow Mercury\n\\rightarrow Mercury \\rightarrow Mercury \\rightarrow Mercury\n\\]\nUses:\n\nSolar electric propulsion\nMultiple gravity assists\n\nPurpose:\nMercury is difficult to reach because a spacecraft must lose a large amount of heliocentric energy.\nThe combined MGA and electric propulsion strategy drastically reduces propellant requirements.\n\n\n\nSMART-1 Mission\nUsed:\n\nSolar electric propulsion\nLunar transfer spirals\n\nDemonstrated the practicality of low-thrust navigation and trajectory optimization.",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#limitations-of-combining-low-thrust-and-mga",
+    "href": "LTP.html#limitations-of-combining-low-thrust-and-mga",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "12.9 Limitations of Combining Low-Thrust and MGA",
+    "text": "12.9 Limitations of Combining Low-Thrust and MGA\nDespite their advantages, combined MGA-low-thrust missions face several challenges.\n\nLong Mission Duration\nContinuous low thrust results in:\n\nMonths to years of transfer time\nIncreased operational costs\n\n\n\n\nComplex Optimization\nThe trajectory design problem becomes highly nonlinear.\nVariables include:\n\nFlyby altitudes\nFlyby dates\nThrust direction\nThrust magnitude\nTime of flight\n\nAdvanced optimal control techniques are typically required.\n\n\n\nNavigation Accuracy Requirements\nSmall targeting errors can significantly affect subsequent flybys.\nTherefore:\n\nPrecise navigation is required\nFrequent trajectory corrections may be necessary\n\n\n\n\nPower Constraints\nElectric propulsion performance depends on available electrical power.\nAt large heliocentric distances:\n\\[\nP \\propto \\frac{1}{r^2}\n\\]\nwhere:\n\n\\(P\\) = available solar power\n\\(r\\) = distance from the Sun\n\nReduced power decreases available thrust.",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#key-takeaway",
+    "href": "LTP.html#key-takeaway",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "12.10 Key Takeaway",
+    "text": "12.10 Key Takeaway\nGravity assists provide large, essentially “free” changes in heliocentric energy, while low-thrust propulsion provides continuous and highly efficient trajectory control. Individually, each technique has significant limitations. Combined, they form one of the most powerful mission design strategies available, enabling complex interplanetary missions that would be impractical or impossible using chemical propulsion alone.\nFor this reason, modern deep-space missions such as Dawn, SMART-1, and BepiColombo rely heavily on the combination of multiple gravity assists and low-thrust electric propulsion.",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#primary-sources",
+    "href": "LTP.html#primary-sources",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "Primary Sources",
+    "text": "Primary Sources\n\nDankanich, J. W. Low-Thrust Propulsion Technologies, Mission Design, and Application.\nO’Reilly, D., Herdrich, G., and Kavanagh, D. F. Electric Propulsion Methods for Small Satellites: A Review. Aerospace, 2021.\nMiller, D. et al. Survey and Performance Evaluation of Small-Satellite Propulsion Technologies.",
+    "crumbs": [
+      "Low-Thrust Propulsion"
+    ]
+  },
+  {
+    "objectID": "LTP.html#additional-references",
+    "href": "LTP.html#additional-references",
+    "title": "Low-Thrust Propulsion Technologies, Mission Design, and Applications",
+    "section": "Additional References",
+    "text": "Additional References\n\nSutton, G. P., and Biblarz, O. Rocket Propulsion Elements.\nWertz, J. R., Everett, D. F., and Puschell, J. J. Space Mission Engineering: The New SMAD.\nChoueiri, E. Y. A Critical History of Electric Propulsion.\nJahn, R. G., and Choueiri, E. Y. Electric Propulsion.\nFortescue, P., Stark, J., and Swinerd, G. Spacecraft Systems Engineering.",
+    "crumbs": [
+      "Low-Thrust Propulsion"
     ]
   }
 ]

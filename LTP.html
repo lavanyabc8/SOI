@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Different Definitions of the Sphere of Influence (SOI) – MGA</title>
+<title>ltp – MGA</title>
 <style>
 
 code{white-space: pre-wrap;}
@@ -4146,7 +4146,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">SOI</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./LTP.html">Low-Thrust Propulsion</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -4173,13 +4173,13 @@ window.Quarto = {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">SOI</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./LTP.html" class="sidebar-item-text sidebar-link">
+  <a href="./LTP.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Low-Thrust Propulsion</span></a>
   </div>
 </li>
@@ -4193,477 +4193,1486 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">1</span> Introduction</a></li>
-  <li><a href="#laplace-sphere-of-influence" id="toc-laplace-sphere-of-influence" class="nav-link" data-scroll-target="#laplace-sphere-of-influence"><span class="header-section-number">2</span> Laplace Sphere of Influence</a>
+  <li><a href="#low-thrust-propulsion-technologies-mission-design-and-applications" id="toc-low-thrust-propulsion-technologies-mission-design-and-applications" class="nav-link active" data-scroll-target="#low-thrust-propulsion-technologies-mission-design-and-applications">Low-Thrust Propulsion Technologies, Mission Design, and Applications</a>
   <ul class="collapse">
-  <li><a href="#formula" id="toc-formula" class="nav-link" data-scroll-target="#formula"><span class="header-section-number">2.1</span> Formula</a></li>
-  <li><a href="#physical-meaning" id="toc-physical-meaning" class="nav-link" data-scroll-target="#physical-meaning"><span class="header-section-number">2.2</span> Physical Meaning</a></li>
-  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">2.3</span> Applications</a></li>
+  <li><a href="#comprehensive-technical-report" id="toc-comprehensive-technical-report" class="nav-link" data-scroll-target="#comprehensive-technical-report">Comprehensive Technical Report</a></li>
   </ul></li>
-  <li><a href="#hill-sphere" id="toc-hill-sphere" class="nav-link" data-scroll-target="#hill-sphere"><span class="header-section-number">3</span> Hill Sphere</a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#fundamentals-of-low-thrust-propulsion" id="toc-fundamentals-of-low-thrust-propulsion" class="nav-link" data-scroll-target="#fundamentals-of-low-thrust-propulsion">Fundamentals of Low-Thrust Propulsion</a>
   <ul class="collapse">
-  <li><a href="#formula-1" id="toc-formula-1" class="nav-link" data-scroll-target="#formula-1"><span class="header-section-number">3.1</span> Formula</a></li>
-  <li><a href="#physical-meaning-1" id="toc-physical-meaning-1" class="nav-link" data-scroll-target="#physical-meaning-1"><span class="header-section-number">3.2</span> Physical Meaning</a></li>
-  <li><a href="#example" id="toc-example" class="nav-link" data-scroll-target="#example"><span class="header-section-number">3.3</span> Example</a></li>
-  <li><a href="#applications-1" id="toc-applications-1" class="nav-link" data-scroll-target="#applications-1"><span class="header-section-number">3.4</span> Applications</a></li>
+  <li><a href="#definition" id="toc-definition" class="nav-link" data-scroll-target="#definition">Definition</a></li>
+  <li><a href="#rocket-thrust-equation" id="toc-rocket-thrust-equation" class="nav-link" data-scroll-target="#rocket-thrust-equation">Rocket Thrust Equation</a></li>
+  <li><a href="#specific-impulse" id="toc-specific-impulse" class="nav-link" data-scroll-target="#specific-impulse">2.3 Specific Impulse</a></li>
   </ul></li>
-  <li><a href="#equal-force-radius" id="toc-equal-force-radius" class="nav-link" data-scroll-target="#equal-force-radius"><span class="header-section-number">4</span> Equal-Force Radius</a>
+  <li><a href="#why-low-thrust-propulsion" id="toc-why-low-thrust-propulsion" class="nav-link" data-scroll-target="#why-low-thrust-propulsion">Why Low-Thrust Propulsion?</a></li>
+  <li><a href="#classification-of-low-thrust-propulsion" id="toc-classification-of-low-thrust-propulsion" class="nav-link" data-scroll-target="#classification-of-low-thrust-propulsion">Classification of Low-Thrust Propulsion</a>
   <ul class="collapse">
-  <li><a href="#formula-2" id="toc-formula-2" class="nav-link" data-scroll-target="#formula-2"><span class="header-section-number">4.1</span> Formula</a></li>
-  <li><a href="#physical-meaning-2" id="toc-physical-meaning-2" class="nav-link" data-scroll-target="#physical-meaning-2"><span class="header-section-number">4.2</span> Physical Meaning</a></li>
-  <li><a href="#example-1" id="toc-example-1" class="nav-link" data-scroll-target="#example-1"><span class="header-section-number">4.3</span> Example</a></li>
-  <li><a href="#why-isnt-it-used" id="toc-why-isnt-it-used" class="nav-link" data-scroll-target="#why-isnt-it-used"><span class="header-section-number">4.4</span> Why isn’t it used?</a></li>
+  <li><a href="#a.-electrothermal-propulsion" id="toc-a.-electrothermal-propulsion" class="nav-link" data-scroll-target="#a.-electrothermal-propulsion">A. Electrothermal Propulsion</a></li>
+  <li><a href="#b.-electrostatic-propulsion" id="toc-b.-electrostatic-propulsion" class="nav-link" data-scroll-target="#b.-electrostatic-propulsion">B. Electrostatic Propulsion</a></li>
+  <li><a href="#c.-electromagnetic-propulsion" id="toc-c.-electromagnetic-propulsion" class="nav-link" data-scroll-target="#c.-electromagnetic-propulsion">C. Electromagnetic Propulsion</a></li>
+  <li><a href="#d.-advanced-concepts" id="toc-d.-advanced-concepts" class="nav-link" data-scroll-target="#d.-advanced-concepts">D. Advanced Concepts</a></li>
   </ul></li>
-  <li><a href="#roche-limit" id="toc-roche-limit" class="nav-link" data-scroll-target="#roche-limit"><span class="header-section-number">5</span> Roche Limit</a>
+  <li><a href="#electrothermal-propulsion" id="toc-electrothermal-propulsion" class="nav-link" data-scroll-target="#electrothermal-propulsion">Electrothermal Propulsion</a>
   <ul class="collapse">
-  <li><a href="#formula-3" id="toc-formula-3" class="nav-link" data-scroll-target="#formula-3"><span class="header-section-number">5.1</span> Formula</a></li>
-  <li><a href="#physical-meaning-3" id="toc-physical-meaning-3" class="nav-link" data-scroll-target="#physical-meaning-3"><span class="header-section-number">5.2</span> Physical Meaning</a></li>
-  <li><a href="#applications-2" id="toc-applications-2" class="nav-link" data-scroll-target="#applications-2"><span class="header-section-number">5.3</span> Applications</a></li>
-  </ul></li>
-  <li><a href="#capture-radius" id="toc-capture-radius" class="nav-link" data-scroll-target="#capture-radius"><span class="header-section-number">6</span> Capture Radius</a>
+  <li><a href="#principle" id="toc-principle" class="nav-link" data-scroll-target="#principle">Principle</a></li>
+  <li><a href="#resistojets" id="toc-resistojets" class="nav-link" data-scroll-target="#resistojets">5.1 Resistojets</a>
   <ul class="collapse">
-  <li><a href="#applications-3" id="toc-applications-3" class="nav-link" data-scroll-target="#applications-3"><span class="header-section-number">6.1</span> Applications</a></li>
+  <li><a href="#working-principle" id="toc-working-principle" class="nav-link" data-scroll-target="#working-principle">Working Principle</a></li>
+  <li><a href="#common-propellants" id="toc-common-propellants" class="nav-link" data-scroll-target="#common-propellants">Common Propellants</a></li>
+  <li><a href="#advantages" id="toc-advantages" class="nav-link" data-scroll-target="#advantages">Advantages</a></li>
+  <li><a href="#disadvantages" id="toc-disadvantages" class="nav-link" data-scroll-target="#disadvantages">Disadvantages</a></li>
+  <li><a href="#typical-performance" id="toc-typical-performance" class="nav-link" data-scroll-target="#typical-performance">Typical Performance</a></li>
   </ul></li>
-  <li><a href="#sphere-of-activity" id="toc-sphere-of-activity" class="nav-link" data-scroll-target="#sphere-of-activity"><span class="header-section-number">7</span> Sphere of Activity</a></li>
-  <li><a href="#effective-sphere-of-influence" id="toc-effective-sphere-of-influence" class="nav-link" data-scroll-target="#effective-sphere-of-influence"><span class="header-section-number">8</span> Effective Sphere of Influence</a>
+  <li><a href="#arcjets" id="toc-arcjets" class="nav-link" data-scroll-target="#arcjets">5.2 Arcjets</a>
   <ul class="collapse">
-  <li><a href="#applications-4" id="toc-applications-4" class="nav-link" data-scroll-target="#applications-4"><span class="header-section-number">8.1</span> Applications</a></li>
+  <li><a href="#working-principle-1" id="toc-working-principle-1" class="nav-link" data-scroll-target="#working-principle-1">Working Principle</a></li>
+  <li><a href="#advantages-1" id="toc-advantages-1" class="nav-link" data-scroll-target="#advantages-1">Advantages</a></li>
+  <li><a href="#disadvantages-1" id="toc-disadvantages-1" class="nav-link" data-scroll-target="#disadvantages-1">Disadvantages</a></li>
+  <li><a href="#typical-performance-1" id="toc-typical-performance-1" class="nav-link" data-scroll-target="#typical-performance-1">Typical Performance</a></li>
+  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications">Applications</a></li>
   </ul></li>
-  <li><a href="#comparison-of-different-definitions" id="toc-comparison-of-different-definitions" class="nav-link" data-scroll-target="#comparison-of-different-definitions"><span class="header-section-number">9</span> Comparison of Different Definitions</a></li>
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">10</span> Summary</a></li>
+  </ul></li>
+  <li><a href="#electrostatic-propulsion" id="toc-electrostatic-propulsion" class="nav-link" data-scroll-target="#electrostatic-propulsion">Electrostatic Propulsion</a>
+  <ul class="collapse">
+  <li><a href="#gridded-ion-thrusters" id="toc-gridded-ion-thrusters" class="nav-link" data-scroll-target="#gridded-ion-thrusters">6.1 Gridded Ion Thrusters</a>
+  <ul class="collapse">
+  <li><a href="#working-principle-2" id="toc-working-principle-2" class="nav-link" data-scroll-target="#working-principle-2">Working Principle</a></li>
+  <li><a href="#advantages-2" id="toc-advantages-2" class="nav-link" data-scroll-target="#advantages-2">Advantages</a></li>
+  <li><a href="#disadvantages-2" id="toc-disadvantages-2" class="nav-link" data-scroll-target="#disadvantages-2">Disadvantages</a></li>
+  <li><a href="#typical-performance-2" id="toc-typical-performance-2" class="nav-link" data-scroll-target="#typical-performance-2">Typical Performance</a></li>
+  <li><a href="#applications-1" id="toc-applications-1" class="nav-link" data-scroll-target="#applications-1">Applications</a></li>
+  </ul></li>
+  <li><a href="#hall-effect-thrusters" id="toc-hall-effect-thrusters" class="nav-link" data-scroll-target="#hall-effect-thrusters">6.2 Hall Effect Thrusters</a>
+  <ul class="collapse">
+  <li><a href="#working-principle-3" id="toc-working-principle-3" class="nav-link" data-scroll-target="#working-principle-3">Working Principle</a></li>
+  <li><a href="#advantages-3" id="toc-advantages-3" class="nav-link" data-scroll-target="#advantages-3">Advantages</a></li>
+  <li><a href="#disadvantages-3" id="toc-disadvantages-3" class="nav-link" data-scroll-target="#disadvantages-3">Disadvantages</a></li>
+  <li><a href="#typical-performance-3" id="toc-typical-performance-3" class="nav-link" data-scroll-target="#typical-performance-3">Typical Performance</a></li>
+  <li><a href="#applications-2" id="toc-applications-2" class="nav-link" data-scroll-target="#applications-2">Applications</a></li>
+  </ul></li>
+  <li><a href="#electrospray-thrusters" id="toc-electrospray-thrusters" class="nav-link" data-scroll-target="#electrospray-thrusters">6.3 Electrospray Thrusters</a>
+  <ul class="collapse">
+  <li><a href="#working-principle-4" id="toc-working-principle-4" class="nav-link" data-scroll-target="#working-principle-4">Working Principle</a></li>
+  <li><a href="#advantages-4" id="toc-advantages-4" class="nav-link" data-scroll-target="#advantages-4">Advantages</a></li>
+  <li><a href="#disadvantages-4" id="toc-disadvantages-4" class="nav-link" data-scroll-target="#disadvantages-4">Disadvantages</a></li>
+  <li><a href="#typical-performance-4" id="toc-typical-performance-4" class="nav-link" data-scroll-target="#typical-performance-4">Typical Performance</a></li>
+  </ul></li>
+  <li><a href="#feep-thrusters" id="toc-feep-thrusters" class="nav-link" data-scroll-target="#feep-thrusters">6.4 FEEP Thrusters</a>
+  <ul class="collapse">
+  <li><a href="#field-emission-electric-propulsion" id="toc-field-emission-electric-propulsion" class="nav-link" data-scroll-target="#field-emission-electric-propulsion">Field Emission Electric Propulsion</a></li>
+  <li><a href="#typical-propellants" id="toc-typical-propellants" class="nav-link" data-scroll-target="#typical-propellants">Typical Propellants</a></li>
+  <li><a href="#advantages-5" id="toc-advantages-5" class="nav-link" data-scroll-target="#advantages-5">Advantages</a></li>
+  <li><a href="#applications-3" id="toc-applications-3" class="nav-link" data-scroll-target="#applications-3">Applications</a></li>
+  <li><a href="#typical-performance-5" id="toc-typical-performance-5" class="nav-link" data-scroll-target="#typical-performance-5">Typical Performance</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#electromagnetic-propulsion" id="toc-electromagnetic-propulsion" class="nav-link" data-scroll-target="#electromagnetic-propulsion">Electromagnetic Propulsion</a>
+  <ul class="collapse">
+  <li><a href="#pulsed-plasma-thrusters-ppt" id="toc-pulsed-plasma-thrusters-ppt" class="nav-link" data-scroll-target="#pulsed-plasma-thrusters-ppt">7.1 Pulsed Plasma Thrusters (PPT)</a>
+  <ul class="collapse">
+  <li><a href="#working-principle-5" id="toc-working-principle-5" class="nav-link" data-scroll-target="#working-principle-5">Working Principle</a></li>
+  <li><a href="#advantages-6" id="toc-advantages-6" class="nav-link" data-scroll-target="#advantages-6">Advantages</a></li>
+  <li><a href="#disadvantages-5" id="toc-disadvantages-5" class="nav-link" data-scroll-target="#disadvantages-5">Disadvantages</a></li>
+  <li><a href="#typical-performance-6" id="toc-typical-performance-6" class="nav-link" data-scroll-target="#typical-performance-6">Typical Performance</a></li>
+  </ul></li>
+  <li><a href="#magnetoplasmadynamic-thrusters-mpd" id="toc-magnetoplasmadynamic-thrusters-mpd" class="nav-link" data-scroll-target="#magnetoplasmadynamic-thrusters-mpd">7.2 Magnetoplasmadynamic Thrusters (MPD)</a>
+  <ul class="collapse">
+  <li><a href="#working-principle-6" id="toc-working-principle-6" class="nav-link" data-scroll-target="#working-principle-6">Working Principle</a></li>
+  <li><a href="#advantages-7" id="toc-advantages-7" class="nav-link" data-scroll-target="#advantages-7">Advantages</a></li>
+  <li><a href="#disadvantages-6" id="toc-disadvantages-6" class="nav-link" data-scroll-target="#disadvantages-6">Disadvantages</a></li>
+  <li><a href="#potential-applications" id="toc-potential-applications" class="nav-link" data-scroll-target="#potential-applications">Potential Applications</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#advanced-low-thrust-concepts" id="toc-advanced-low-thrust-concepts" class="nav-link" data-scroll-target="#advanced-low-thrust-concepts">Advanced Low-Thrust Concepts</a>
+  <ul class="collapse">
+  <li><a href="#solar-sails" id="toc-solar-sails" class="nav-link" data-scroll-target="#solar-sails">8.1 Solar Sails</a>
+  <ul class="collapse">
+  <li><a href="#principle-1" id="toc-principle-1" class="nav-link" data-scroll-target="#principle-1">Principle</a></li>
+  <li><a href="#advantages-8" id="toc-advantages-8" class="nav-link" data-scroll-target="#advantages-8">Advantages</a></li>
+  <li><a href="#disadvantages-7" id="toc-disadvantages-7" class="nav-link" data-scroll-target="#disadvantages-7">Disadvantages</a></li>
+  </ul></li>
+  <li><a href="#nuclear-electric-propulsion-nep" id="toc-nuclear-electric-propulsion-nep" class="nav-link" data-scroll-target="#nuclear-electric-propulsion-nep">8.2 Nuclear Electric Propulsion (NEP)</a>
+  <ul class="collapse">
+  <li><a href="#principle-2" id="toc-principle-2" class="nav-link" data-scroll-target="#principle-2">Principle</a></li>
+  <li><a href="#advantages-9" id="toc-advantages-9" class="nav-link" data-scroll-target="#advantages-9">Advantages</a></li>
+  <li><a href="#applications-4" id="toc-applications-4" class="nav-link" data-scroll-target="#applications-4">Applications</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#low-thrust-mission-design" id="toc-low-thrust-mission-design" class="nav-link" data-scroll-target="#low-thrust-mission-design">Low-Thrust Mission Design</a></li>
+  <li><a href="#trajectory-optimization-methods" id="toc-trajectory-optimization-methods" class="nav-link" data-scroll-target="#trajectory-optimization-methods">Trajectory Optimization Methods</a>
+  <ul class="collapse">
+  <li><a href="#direct-methods" id="toc-direct-methods" class="nav-link" data-scroll-target="#direct-methods">10.1 Direct Methods</a>
+  <ul class="collapse">
+  <li><a href="#advantages-10" id="toc-advantages-10" class="nav-link" data-scroll-target="#advantages-10">Advantages</a></li>
+  </ul></li>
+  <li><a href="#indirect-methods" id="toc-indirect-methods" class="nav-link" data-scroll-target="#indirect-methods">10.2 Indirect Methods</a>
+  <ul class="collapse">
+  <li><a href="#pontryagins-maximum-principle" id="toc-pontryagins-maximum-principle" class="nav-link" data-scroll-target="#pontryagins-maximum-principle">Pontryagin’s Maximum Principle</a></li>
+  <li><a href="#advantages-11" id="toc-advantages-11" class="nav-link" data-scroll-target="#advantages-11">Advantages</a></li>
+  <li><a href="#disadvantages-8" id="toc-disadvantages-8" class="nav-link" data-scroll-target="#disadvantages-8">Disadvantages</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#typical-low-thrust-trajectories" id="toc-typical-low-thrust-trajectories" class="nav-link" data-scroll-target="#typical-low-thrust-trajectories">Typical Low-Thrust Trajectories</a>
+  <ul class="collapse">
+  <li><a href="#spiral-orbit-raising" id="toc-spiral-orbit-raising" class="nav-link" data-scroll-target="#spiral-orbit-raising">Spiral Orbit Raising</a></li>
+  <li><a href="#interplanetary-transfers" id="toc-interplanetary-transfers" class="nav-link" data-scroll-target="#interplanetary-transfers">Interplanetary Transfers</a></li>
+  <li><a href="#asteroid-rendezvous" id="toc-asteroid-rendezvous" class="nav-link" data-scroll-target="#asteroid-rendezvous">Asteroid Rendezvous</a></li>
+  </ul></li>
+  <li><a href="#applications-5" id="toc-applications-5" class="nav-link" data-scroll-target="#applications-5">Applications</a>
+  <ul class="collapse">
+  <li><a href="#station-keeping" id="toc-station-keeping" class="nav-link" data-scroll-target="#station-keeping">Station Keeping</a></li>
+  <li><a href="#orbit-raising" id="toc-orbit-raising" class="nav-link" data-scroll-target="#orbit-raising">Orbit Raising</a></li>
+  <li><a href="#formation-flying" id="toc-formation-flying" class="nav-link" data-scroll-target="#formation-flying">Formation Flying</a></li>
+  <li><a href="#collision-avoidance" id="toc-collision-avoidance" class="nav-link" data-scroll-target="#collision-avoidance">Collision Avoidance</a></li>
+  <li><a href="#deep-space-exploration" id="toc-deep-space-exploration" class="nav-link" data-scroll-target="#deep-space-exploration">Deep-Space Exploration</a></li>
+  </ul></li>
+  <li><a href="#small-satellites-and-cubesats" id="toc-small-satellites-and-cubesats" class="nav-link" data-scroll-target="#small-satellites-and-cubesats">Small Satellites and CubeSats</a></li>
+  <li><a href="#current-challenges" id="toc-current-challenges" class="nav-link" data-scroll-target="#current-challenges">Current Challenges</a>
+  <ul class="collapse">
+  <li><a href="#power-limitations" id="toc-power-limitations" class="nav-link" data-scroll-target="#power-limitations">14.1 Power Limitations</a></li>
+  <li><a href="#thermal-management" id="toc-thermal-management" class="nav-link" data-scroll-target="#thermal-management">14.2 Thermal Management</a></li>
+  <li><a href="#lifetime" id="toc-lifetime" class="nav-link" data-scroll-target="#lifetime">14.3 Lifetime</a></li>
+  <li><a href="#miniaturization" id="toc-miniaturization" class="nav-link" data-scroll-target="#miniaturization">14.4 Miniaturization</a></li>
+  </ul></li>
+  <li><a href="#future-trends" id="toc-future-trends" class="nav-link" data-scroll-target="#future-trends">Future Trends</a></li>
+  <li><a href="#low-thrust-propulsion-and-gravity-assist-missions" id="toc-low-thrust-propulsion-and-gravity-assist-missions" class="nav-link" data-scroll-target="#low-thrust-propulsion-and-gravity-assist-missions">Low-Thrust Propulsion and Gravity Assist Missions</a>
+  <ul class="collapse">
+  <li><a href="#why-are-gravity-assists-used" id="toc-why-are-gravity-assists-used" class="nav-link" data-scroll-target="#why-are-gravity-assists-used">12.1 Why Are Gravity Assists Used?</a>
+  <ul class="collapse">
+  <li><a href="#benefits-of-gravity-assists" id="toc-benefits-of-gravity-assists" class="nav-link" data-scroll-target="#benefits-of-gravity-assists">Benefits of Gravity Assists</a></li>
+  </ul></li>
+  <li><a href="#why-not-use-pure-chemical-propulsion" id="toc-why-not-use-pure-chemical-propulsion" class="nav-link" data-scroll-target="#why-not-use-pure-chemical-propulsion">12.2 Why Not Use Pure Chemical Propulsion?</a></li>
+  <li><a href="#why-not-use-gravity-assists-alone" id="toc-why-not-use-gravity-assists-alone" class="nav-link" data-scroll-target="#why-not-use-gravity-assists-alone">12.3 Why Not Use Gravity Assists Alone?</a></li>
+  <li><a href="#why-combine-low-thrust-propulsion-with-gravity-assists" id="toc-why-combine-low-thrust-propulsion-with-gravity-assists" class="nav-link" data-scroll-target="#why-combine-low-thrust-propulsion-with-gravity-assists">12.4 Why Combine Low-Thrust Propulsion with Gravity Assists?</a>
+  <ul class="collapse">
+  <li><a href="#gravity-assist-provides" id="toc-gravity-assist-provides" class="nav-link" data-scroll-target="#gravity-assist-provides">Gravity Assist Provides</a></li>
+  <li><a href="#low-thrust-provides" id="toc-low-thrust-provides" class="nav-link" data-scroll-target="#low-thrust-provides">Low-Thrust Provides</a></li>
+  </ul></li>
+  <li><a href="#multiple-gravity-assist-mga-missions" id="toc-multiple-gravity-assist-mga-missions" class="nav-link" data-scroll-target="#multiple-gravity-assist-mga-missions">12.5 Multiple Gravity Assist (MGA) Missions</a></li>
+  <li><a href="#why-low-thrust-is-especially-useful-in-mga-missions" id="toc-why-low-thrust-is-especially-useful-in-mga-missions" class="nav-link" data-scroll-target="#why-low-thrust-is-especially-useful-in-mga-missions">12.6 Why Low-Thrust is Especially Useful in MGA Missions</a>
+  <ul class="collapse">
+  <li><a href="#modify-arrival-conditions" id="toc-modify-arrival-conditions" class="nav-link" data-scroll-target="#modify-arrival-conditions">Modify Arrival Conditions</a></li>
+  <li><a href="#expand-launch-windows" id="toc-expand-launch-windows" class="nav-link" data-scroll-target="#expand-launch-windows">Expand Launch Windows</a></li>
+  <li><a href="#reduce-required-flybys" id="toc-reduce-required-flybys" class="nav-link" data-scroll-target="#reduce-required-flybys">Reduce Required Flybys</a></li>
+  <li><a href="#enable-final-rendezvous" id="toc-enable-final-rendezvous" class="nav-link" data-scroll-target="#enable-final-rendezvous">Enable Final Rendezvous</a></li>
+  </ul></li>
+  <li><a href="#comparison-with-other-mission-architectures" id="toc-comparison-with-other-mission-architectures" class="nav-link" data-scroll-target="#comparison-with-other-mission-architectures">12.7 Comparison with Other Mission Architectures</a></li>
+  <li><a href="#examples-of-mga-and-low-thrust-missions" id="toc-examples-of-mga-and-low-thrust-missions" class="nav-link" data-scroll-target="#examples-of-mga-and-low-thrust-missions">12.8 Examples of MGA and Low-Thrust Missions</a>
+  <ul class="collapse">
+  <li><a href="#dawn-mission" id="toc-dawn-mission" class="nav-link" data-scroll-target="#dawn-mission">Dawn Mission</a></li>
+  <li><a href="#bepicolombo-mission" id="toc-bepicolombo-mission" class="nav-link" data-scroll-target="#bepicolombo-mission">BepiColombo Mission</a></li>
+  <li><a href="#smart-1-mission" id="toc-smart-1-mission" class="nav-link" data-scroll-target="#smart-1-mission">SMART-1 Mission</a></li>
+  </ul></li>
+  <li><a href="#limitations-of-combining-low-thrust-and-mga" id="toc-limitations-of-combining-low-thrust-and-mga" class="nav-link" data-scroll-target="#limitations-of-combining-low-thrust-and-mga">12.9 Limitations of Combining Low-Thrust and MGA</a>
+  <ul class="collapse">
+  <li><a href="#long-mission-duration" id="toc-long-mission-duration" class="nav-link" data-scroll-target="#long-mission-duration">Long Mission Duration</a></li>
+  <li><a href="#complex-optimization" id="toc-complex-optimization" class="nav-link" data-scroll-target="#complex-optimization">Complex Optimization</a></li>
+  <li><a href="#navigation-accuracy-requirements" id="toc-navigation-accuracy-requirements" class="nav-link" data-scroll-target="#navigation-accuracy-requirements">Navigation Accuracy Requirements</a></li>
+  <li><a href="#power-constraints" id="toc-power-constraints" class="nav-link" data-scroll-target="#power-constraints">Power Constraints</a></li>
+  </ul></li>
+  <li><a href="#key-takeaway" id="toc-key-takeaway" class="nav-link" data-scroll-target="#key-takeaway">12.10 Key Takeaway</a></li>
+  </ul></li>
+  <li><a href="#key-conclusions" id="toc-key-conclusions" class="nav-link" data-scroll-target="#key-conclusions">Key Conclusions</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a>
+  <ul class="collapse">
+  <li><a href="#primary-sources" id="toc-primary-sources" class="nav-link" data-scroll-target="#primary-sources">Primary Sources</a></li>
+  <li><a href="#additional-references" id="toc-additional-references" class="nav-link" data-scroll-target="#additional-references">Additional References</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Different Definitions of the Sphere of Influence (SOI)</h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta">
 
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<section id="introduction" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Introduction</h1>
-<p>The term <strong>Sphere of Influence (SOI)</strong> is <strong>not uniquely defined</strong> in orbital mechanics. Different definitions are used depending on the physical problem being studied.</p>
-<p>For example,</p>
-<ul>
-<li><strong>Laplace SOI</strong> is used in interplanetary trajectory design.</li>
-<li><strong>Hill Sphere</strong> is used in orbital stability.</li>
-<li><strong>Equal-force radius</strong> compares gravitational forces.</li>
-<li><strong>Roche Limit</strong> concerns tidal disruption.</li>
-</ul>
-<p>Each definition answers a different physical question.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>There is <strong>no single universal definition</strong> of the Sphere of Influence. The appropriate definition depends on the application.</p>
-</div>
-</div>
+<section id="low-thrust-propulsion-technologies-mission-design-and-applications" class="level1">
+<h1>Low-Thrust Propulsion Technologies, Mission Design, and Applications</h1>
+<section id="comprehensive-technical-report" class="level2">
+<h2 class="anchored" data-anchor-id="comprehensive-technical-report">Comprehensive Technical Report</h2>
+<p><em>Based primarily on the works of John W. Dankanich, O’Reilly et al., and Miller et al.</em></p>
 <hr>
 </section>
-<section id="laplace-sphere-of-influence" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Laplace Sphere of Influence</h1>
-<p>The Laplace Sphere of Influence is the definition derived by Curtis and is used in the <strong>Patched-Conic Approximation</strong>.</p>
-<section id="formula" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="formula"><span class="header-section-number">2.1</span> Formula</h2>
+</section>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>Space missions have traditionally relied on chemical propulsion systems because they provide high thrust and rapid maneuverability. However, chemical propulsion suffers from relatively low specific impulse, requiring large propellant masses for ambitious missions.</p>
+<p>Low-thrust propulsion systems, particularly electric propulsion (EP), address this limitation by providing extremely high propellant efficiency at the cost of low thrust levels. Instead of producing large accelerations over minutes, low-thrust systems generate tiny accelerations continuously over weeks, months, or even years. This allows spacecraft to achieve very large total velocity changes (ΔV) with significantly less propellant.</p>
+<p>Examples include:</p>
+<ul>
+<li>Deep-space missions</li>
+<li>Orbit raising</li>
+<li>Station keeping</li>
+<li>Formation flying</li>
+<li>Constellation maintenance</li>
+<li>Interplanetary exploration</li>
+<li>Asteroid rendezvous</li>
+<li>Small satellite maneuvering</li>
+</ul>
+<p>Notable missions include:</p>
+<ul>
+<li>SMART-1</li>
+<li>Dawn</li>
+<li>Deep Space 1</li>
+<li>BepiColombo</li>
+</ul>
+<p>These missions demonstrated that low-thrust propulsion can enable trajectories impossible or prohibitively expensive using conventional chemical propulsion.</p>
+<hr>
+</section>
+<section id="fundamentals-of-low-thrust-propulsion" class="level1">
+<h1>Fundamentals of Low-Thrust Propulsion</h1>
+<section id="definition" class="level2">
+<h2 class="anchored" data-anchor-id="definition">Definition</h2>
+<p>Low-thrust propulsion refers to propulsion systems producing accelerations much smaller than gravitational acceleration.</p>
+<p>Typically:</p>
 <p><span class="math display">\[
-R_{SOI}
-=
-a\left(\frac{m_p}{m_s}\right)^{2/5}
+a_T \ll g_0
+\]</span></p>
+<p>where</p>
+<p><span class="math display">\[
+g_0 = 9.81 \, m/s^2
+\]</span></p>
+<p>Typical thrust levels:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>System</th>
+<th>Thrust</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Chemical Rocket</td>
+<td><span class="math inline">\(10^3 - 10^7\)</span> N</td>
+</tr>
+<tr class="even">
+<td>Hall Thruster</td>
+<td>0.01–5 N</td>
+</tr>
+<tr class="odd">
+<td>Ion Thruster</td>
+<td>0.001–1 N</td>
+</tr>
+<tr class="even">
+<td>Electrospray</td>
+<td>μN–mN</td>
+</tr>
+<tr class="odd">
+<td>FEEP</td>
+<td>μN</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="rocket-thrust-equation" class="level2">
+<h2 class="anchored" data-anchor-id="rocket-thrust-equation">Rocket Thrust Equation</h2>
+<p>The general thrust equation is</p>
+<p><span class="math display">\[
+T=\dot m v_e +(P_e-P_a)A_e
 \]</span></p>
 <p>where</p>
 <ul>
-<li><span class="math inline">\(a\)</span> = orbital radius of the planet about the Sun</li>
-<li><span class="math inline">\(m_p\)</span> = mass of the planet</li>
-<li><span class="math inline">\(m_s\)</span> = mass of the Sun</li>
+<li><span class="math inline">\(T\)</span> = thrust</li>
+<li><span class="math inline">\(\dot m\)</span> = mass flow rate</li>
+<li><span class="math inline">\(v_e\)</span> = exhaust velocity</li>
+<li><span class="math inline">\(P_e\)</span> = exit pressure</li>
+<li><span class="math inline">\(P_a\)</span> = ambient pressure</li>
+<li><span class="math inline">\(A_e\)</span> = nozzle exit area</li>
 </ul>
-</section>
-<section id="physical-meaning" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="physical-meaning"><span class="header-section-number">2.2</span> Physical Meaning</h2>
-<p>The Laplace SOI is <strong>not</strong> the distance where the Sun’s gravity equals the planet’s gravity.</p>
-<p>Instead, it is the distance where</p>
-<blockquote class="blockquote">
-<p>the <strong>planet-centered two-body approximation becomes more accurate than the heliocentric two-body approximation.</strong></p>
-</blockquote>
-<p>This definition is obtained by comparing</p>
+<p>For electric propulsion operating in vacuum,</p>
 <p><span class="math display">\[
-\frac{p_s}{a_p}
+T \approx \dot m v_e
 \]</span></p>
-<p>and</p>
-<p><span class="math display">\[
-\frac{P_p}{A_s}
-\]</span></p>
-<p>and setting them equal.</p>
+<hr>
 </section>
-<section id="applications" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="applications"><span class="header-section-number">2.3</span> Applications</h2>
+<section id="specific-impulse" class="level2">
+<h2 class="anchored" data-anchor-id="specific-impulse">2.3 Specific Impulse</h2>
+<p>Specific impulse is a measure of propellant efficiency.</p>
+<p><span class="math display">\[
+I_{sp}=\frac{v_e}{g_0}
+\]</span></p>
+<p>Higher specific impulse means:</p>
 <ul>
-<li>Patched-conic approximation</li>
-<li>Interplanetary trajectory design</li>
-<li>Mission analysis</li>
-<li>Curtis</li>
-<li>Bate, Mueller &amp; White</li>
+<li>Less propellant consumption</li>
+<li>Greater mission capability</li>
+<li>Increased payload fraction</li>
 </ul>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The Laplace SOI is a <strong>model-selection boundary</strong>, not a physical boundary.</p>
-</div>
-</div>
+<p>Typical values:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Propulsion Type</th>
+<th>Specific Impulse (<span class="math inline">\(I_{sp}\)</span>)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Chemical</td>
+<td>250–450 s</td>
+</tr>
+<tr class="even">
+<td>Resistojet</td>
+<td>300–500 s</td>
+</tr>
+<tr class="odd">
+<td>Arcjet</td>
+<td>500–1000 s</td>
+</tr>
+<tr class="even">
+<td>Hall Thruster</td>
+<td>1000–2500 s</td>
+</tr>
+<tr class="odd">
+<td>Ion Thruster</td>
+<td>2000–10000 s</td>
+</tr>
+<tr class="even">
+<td>FEEP</td>
+<td>&gt;10000 s</td>
+</tr>
+</tbody>
+</table>
 <hr>
 </section>
 </section>
-<section id="hill-sphere" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> Hill Sphere</h1>
-<p>The Hill Sphere is obtained from the <strong>Circular Restricted Three Body Problem (CR3BP).</strong></p>
-<section id="formula-1" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="formula-1"><span class="header-section-number">3.1</span> Formula</h2>
+<section id="why-low-thrust-propulsion" class="level1">
+<h1>Why Low-Thrust Propulsion?</h1>
+<p>The major advantage becomes apparent from the Tsiolkovsky rocket equation:</p>
 <p><span class="math display">\[
-R_H
-=
-a
-\left(
-\frac{m_p}{3m_s}
-\right)^{1/3}
+\Delta V = I_{sp}g_0 \ln\left(\frac{m_0}{m_f}\right)
 \]</span></p>
-<p>Notice</p>
+<p>where:</p>
 <ul>
-<li>exponent = <span class="math inline">\(\frac13\)</span></li>
-<li>factor = 3</li>
+<li><span class="math inline">\(\Delta V\)</span> = total velocity change</li>
+<li><span class="math inline">\(m_0\)</span> = initial mass</li>
+<li><span class="math inline">\(m_f\)</span> = final mass</li>
 </ul>
-</section>
-<section id="physical-meaning-1" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="physical-meaning-1"><span class="header-section-number">3.2</span> Physical Meaning</h2>
-<p>The Hill Sphere represents the region where</p>
-<blockquote class="blockquote">
-<p>a satellite can remain gravitationally bound to the planet despite the gravitational influence of the Sun.</p>
-</blockquote>
-<p>Unlike Laplace’s SOI, this has a genuine dynamical interpretation.</p>
-</section>
-<section id="example" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="example"><span class="header-section-number">3.3</span> Example</h2>
-<p>For Earth,</p>
+<p>Increasing specific impulse dramatically reduces required propellant mass.</p>
+<p>Benefits include:</p>
 <ul>
-<li>Laplace SOI</li>
+<li>Lower launch mass</li>
+<li>Larger payload fraction</li>
+<li>Longer mission lifetimes</li>
+<li>Greater achievable ΔV</li>
 </ul>
-<p><span class="math display">\[
-\approx 925,000\text{ km}
-\]</span></p>
+<p>This advantage becomes especially important for:</p>
 <ul>
-<li>Hill Sphere</li>
-</ul>
-<p><span class="math display">\[
-\approx 1.5\times10^6\text{ km}
-\]</span></p>
-<p>The Hill Sphere is considerably larger.</p>
-</section>
-<section id="applications-1" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="applications-1"><span class="header-section-number">3.4</span> Applications</h2>
-<ul>
-<li>Satellite stability</li>
-<li>Natural satellites</li>
-<li>Lagrange points</li>
-<li>CR3BP</li>
-<li>Long-term orbital dynamics</li>
+<li>CubeSats</li>
+<li>Small satellites</li>
+<li>Deep-space missions</li>
+<li>Asteroid exploration</li>
+<li>Interplanetary travel</li>
 </ul>
 <hr>
 </section>
+<section id="classification-of-low-thrust-propulsion" class="level1">
+<h1>Classification of Low-Thrust Propulsion</h1>
+<p>Low-thrust propulsion systems can be categorized into four major classes:</p>
+<section id="a.-electrothermal-propulsion" class="level2">
+<h2 class="anchored" data-anchor-id="a.-electrothermal-propulsion">A. Electrothermal Propulsion</h2>
+<p>Electrical energy heats the propellant before expansion through a nozzle.</p>
 </section>
-<section id="equal-force-radius" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Equal-Force Radius</h1>
-<p>This is the simplest definition.</p>
-<p>It is obtained by equating the gravitational forces of the Sun and the planet.</p>
-<section id="formula-2" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="formula-2"><span class="header-section-number">4.1</span> Formula</h2>
-<p>Starting with</p>
-<p><span class="math display">\[
-\frac{GM_p}{r^2}
-=
-\frac{GM_s}{R^2}
-\]</span></p>
-<p>gives</p>
-<p><span class="math display">\[
-r
-=
-R
-\sqrt{\frac{m_p}{m_s}}
-\]</span></p>
+<section id="b.-electrostatic-propulsion" class="level2">
+<h2 class="anchored" data-anchor-id="b.-electrostatic-propulsion">B. Electrostatic Propulsion</h2>
+<p>Electric fields accelerate ions directly.</p>
 </section>
-<section id="physical-meaning-2" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="physical-meaning-2"><span class="header-section-number">4.2</span> Physical Meaning</h2>
-<p>At this distance,</p>
-<p><span class="math display">\[
-F_{\text{planet}}
-=
-F_{\text{Sun}}
-\]</span></p>
+<section id="c.-electromagnetic-propulsion" class="level2">
+<h2 class="anchored" data-anchor-id="c.-electromagnetic-propulsion">C. Electromagnetic Propulsion</h2>
+<p>Electric and magnetic fields accelerate plasma.</p>
 </section>
-<section id="example-1" class="level2" data-number="4.3">
-<h2 data-number="4.3" class="anchored" data-anchor-id="example-1"><span class="header-section-number">4.3</span> Example</h2>
-<p>For Earth,</p>
-<p><span class="math display">\[
-r
-\approx
-259,000\text{ km}
-\]</span></p>
-<p>which is much smaller than the Laplace SOI.</p>
-</section>
-<section id="why-isnt-it-used" class="level2" data-number="4.4">
-<h2 data-number="4.4" class="anchored" data-anchor-id="why-isnt-it-used"><span class="header-section-number">4.4</span> Why isn’t it used?</h2>
-<p>Although the forces become equal,</p>
-<p>this does <strong>not</strong> imply equal orbital influence.</p>
-<p>The planet and spacecraft are both accelerating toward the Sun, so most of the Sun’s gravity cancels when studying motion relative to the planet.</p>
-<p>Only the <strong>differential (tidal) acceleration</strong> affects the relative motion.</p>
-<p>Therefore, the equal-force radius has limited usefulness in orbital mechanics.</p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Equal gravitational force does <strong>not</strong> imply equal orbital influence.</p>
-</div>
-</div>
-<hr>
-</section>
-</section>
-<section id="roche-limit" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> Roche Limit</h1>
-<p>The Roche Limit concerns <strong>tidal disruption</strong>, not orbital dominance.</p>
-<section id="formula-3" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="formula-3"><span class="header-section-number">5.1</span> Formula</h2>
-<p><span class="math display">\[
-R_R
-\approx
-2.44R_p
-\left(
-\frac{\rho_p}{\rho_s}
-\right)^{1/3}
-\]</span></p>
-<p>where</p>
+<section id="d.-advanced-concepts" class="level2">
+<h2 class="anchored" data-anchor-id="d.-advanced-concepts">D. Advanced Concepts</h2>
 <ul>
-<li><span class="math inline">\(R_p\)</span> = radius of the primary body</li>
-<li><span class="math inline">\(\rho_p\)</span> = density of the primary</li>
-<li><span class="math inline">\(\rho_s\)</span> = density of the satellite</li>
-</ul>
-</section>
-<section id="physical-meaning-3" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="physical-meaning-3"><span class="header-section-number">5.2</span> Physical Meaning</h2>
-<p>Inside the Roche Limit,</p>
-<p>tidal forces exceed the self-gravity of the satellite, causing it to break apart.</p>
-</section>
-<section id="applications-2" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="applications-2"><span class="header-section-number">5.3</span> Applications</h2>
-<ul>
-<li>Planetary rings</li>
-<li>Tidal disruption</li>
-<li>Comets</li>
-<li>Planetary science</li>
+<li>Solar sails</li>
+<li>Nuclear electric propulsion</li>
+<li>Electrospray propulsion</li>
+<li>Hybrid propulsion systems</li>
 </ul>
 <hr>
 </section>
 </section>
-<section id="capture-radius" class="level1" data-number="6">
-<h1 data-number="6"><span class="header-section-number">6</span> Capture Radius</h1>
-<p>The Capture Radius is not uniquely defined.</p>
-<p>Its value depends on</p>
+<section id="electrothermal-propulsion" class="level1">
+<h1>Electrothermal Propulsion</h1>
+<section id="principle" class="level2">
+<h2 class="anchored" data-anchor-id="principle">Principle</h2>
+<p>Electrical energy is used to increase the thermal energy of the propellant.</p>
+<p>The heated gas expands through a conventional nozzle to produce thrust.</p>
+<p><span class="math display">\[
+T \propto \dot m v_e
+\]</span></p>
+<p>Electrothermal systems generally provide moderate specific impulse with relatively simple designs.</p>
+<hr>
+</section>
+<section id="resistojets" class="level2">
+<h2 class="anchored" data-anchor-id="resistojets">5.1 Resistojets</h2>
+<section id="working-principle" class="level3">
+<h3 class="anchored" data-anchor-id="working-principle">Working Principle</h3>
+<p>Electrical resistance heaters raise the propellant temperature.</p>
+<p>The heated gas expands through a converging-diverging nozzle.</p>
+</section>
+<section id="common-propellants" class="level3">
+<h3 class="anchored" data-anchor-id="common-propellants">Common Propellants</h3>
 <ul>
-<li>incoming velocity</li>
-<li>escape velocity</li>
-<li>atmospheric drag (if present)</li>
-<li>gravitational focusing</li>
+<li>Nitrogen</li>
+<li>Ammonia</li>
+<li>Water vapor</li>
+<li>Xenon</li>
 </ul>
-<section id="applications-3" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="applications-3"><span class="header-section-number">6.1</span> Applications</h2>
+</section>
+<section id="advantages" class="level3">
+<h3 class="anchored" data-anchor-id="advantages">Advantages</h3>
 <ul>
-<li>Asteroid capture</li>
-<li>Planet formation</li>
-<li>Temporary gravitational capture</li>
+<li>Simple design</li>
+<li>High reliability</li>
+<li>Low cost</li>
+<li>Flight heritage</li>
+</ul>
+</section>
+<section id="disadvantages" class="level3">
+<h3 class="anchored" data-anchor-id="disadvantages">Disadvantages</h3>
+<ul>
+<li>Limited performance</li>
+<li>Lower specific impulse than other electric propulsion systems</li>
+</ul>
+</section>
+<section id="typical-performance" class="level3">
+<h3 class="anchored" data-anchor-id="typical-performance">Typical Performance</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Thrust</td>
+<td>mN–N</td>
+</tr>
+<tr class="even">
+<td>Specific Impulse</td>
+<td>300–500 s</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+</section>
+<section id="arcjets" class="level2">
+<h2 class="anchored" data-anchor-id="arcjets">5.2 Arcjets</h2>
+<section id="working-principle-1" class="level3">
+<h3 class="anchored" data-anchor-id="working-principle-1">Working Principle</h3>
+<p>An electrical arc heats the propellant to extremely high temperatures.</p>
+<p>The superheated gas then expands through a nozzle.</p>
+</section>
+<section id="advantages-1" class="level3">
+<h3 class="anchored" data-anchor-id="advantages-1">Advantages</h3>
+<ul>
+<li>Higher performance than resistojets</li>
+<li>Mature technology</li>
+</ul>
+</section>
+<section id="disadvantages-1" class="level3">
+<h3 class="anchored" data-anchor-id="disadvantages-1">Disadvantages</h3>
+<ul>
+<li>Electrode erosion</li>
+<li>Increased power requirements</li>
+</ul>
+</section>
+<section id="typical-performance-1" class="level3">
+<h3 class="anchored" data-anchor-id="typical-performance-1">Typical Performance</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Specific Impulse</td>
+<td>500–1000 s</td>
+</tr>
+<tr class="even">
+<td>Thrust</td>
+<td>0.01–1 N</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="applications" class="level3">
+<h3 class="anchored" data-anchor-id="applications">Applications</h3>
+<ul>
+<li>Geostationary satellite station keeping</li>
+<li>Orbit transfer</li>
 </ul>
 <hr>
 </section>
 </section>
-<section id="sphere-of-activity" class="level1" data-number="7">
-<h1 data-number="7"><span class="header-section-number">7</span> Sphere of Activity</h1>
-<p>Older astrodynamics literature sometimes uses the term</p>
-<blockquote class="blockquote">
-<p><strong>Sphere of Activity</strong></p>
-</blockquote>
-<p>instead of</p>
-<blockquote class="blockquote">
-<p><strong>Sphere of Influence.</strong></p>
-</blockquote>
-<p>In most classical texts,</p>
-<p>the Sphere of Activity refers to the <strong>Laplace Sphere of Influence</strong>.</p>
+</section>
+<section id="electrostatic-propulsion" class="level1">
+<h1>Electrostatic Propulsion</h1>
+<p>Electrostatic propulsion is currently the most successful and widely used electric propulsion category.</p>
+<hr>
+<section id="gridded-ion-thrusters" class="level2">
+<h2 class="anchored" data-anchor-id="gridded-ion-thrusters">6.1 Gridded Ion Thrusters</h2>
+<section id="working-principle-2" class="level3">
+<h3 class="anchored" data-anchor-id="working-principle-2">Working Principle</h3>
+<ol type="1">
+<li>Neutral xenon gas is ionized.</li>
+<li>Positive ions are extracted.</li>
+<li>Electrostatic grids accelerate the ions.</li>
+</ol>
+<p>The exhaust velocity is</p>
+<p><span class="math display">\[
+v_e = \sqrt{\frac{2qV}{m}}
+\]</span></p>
+<p>where:</p>
+<ul>
+<li><span class="math inline">\(q\)</span> = ion charge</li>
+<li><span class="math inline">\(V\)</span> = accelerating voltage</li>
+<li><span class="math inline">\(m\)</span> = ion mass</li>
+</ul>
+</section>
+<section id="advantages-2" class="level3">
+<h3 class="anchored" data-anchor-id="advantages-2">Advantages</h3>
+<ul>
+<li>Extremely high efficiency</li>
+<li>High specific impulse</li>
+<li>Excellent for deep-space missions</li>
+</ul>
+</section>
+<section id="disadvantages-2" class="level3">
+<h3 class="anchored" data-anchor-id="disadvantages-2">Disadvantages</h3>
+<ul>
+<li>Low thrust levels</li>
+<li>Grid erosion</li>
+<li>Complex power processing requirements</li>
+</ul>
+</section>
+<section id="typical-performance-2" class="level3">
+<h3 class="anchored" data-anchor-id="typical-performance-2">Typical Performance</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Specific Impulse</td>
+<td>2000–10000 s</td>
+</tr>
+<tr class="even">
+<td>Thrust</td>
+<td>mN–N</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="applications-1" class="level3">
+<h3 class="anchored" data-anchor-id="applications-1">Applications</h3>
+<ul>
+<li>Deep Space 1</li>
+<li>Dawn</li>
+<li>BepiColombo</li>
+</ul>
 <hr>
 </section>
-<section id="effective-sphere-of-influence" class="level1" data-number="8">
-<h1 data-number="8"><span class="header-section-number">8</span> Effective Sphere of Influence</h1>
-<p>Modern trajectory design rarely uses a fixed SOI.</p>
-<p>Instead,</p>
-<p>the complete N-body equations are integrated numerically.</p>
-<p>Consequently,</p>
-<p>there is no unique SOI.</p>
-<p>The effective region depends on</p>
+</section>
+<section id="hall-effect-thrusters" class="level2">
+<h2 class="anchored" data-anchor-id="hall-effect-thrusters">6.2 Hall Effect Thrusters</h2>
+<section id="working-principle-3" class="level3">
+<h3 class="anchored" data-anchor-id="working-principle-3">Working Principle</h3>
+<p>A radial magnetic field traps electrons inside the discharge chamber.</p>
+<p>The Lorentz force acting on charged particles is</p>
+<p><span class="math display">\[
+\mathbf{F}=q(\mathbf{E}+\mathbf{v}\times\mathbf{B})
+\]</span></p>
+<p>The trapped electrons ionize the propellant, while ions are accelerated axially to produce thrust.</p>
+</section>
+<section id="advantages-3" class="level3">
+<h3 class="anchored" data-anchor-id="advantages-3">Advantages</h3>
 <ul>
-<li>trajectory</li>
-<li>velocity</li>
-<li>perturbations</li>
-<li>numerical tolerance</li>
+<li>Higher thrust density than ion thrusters</li>
+<li>Simpler architecture</li>
+<li>Mature technology</li>
 </ul>
-<section id="applications-4" class="level2" data-number="8.1">
-<h2 data-number="8.1" class="anchored" data-anchor-id="applications-4"><span class="header-section-number">8.1</span> Applications</h2>
+</section>
+<section id="disadvantages-3" class="level3">
+<h3 class="anchored" data-anchor-id="disadvantages-3">Disadvantages</h3>
 <ul>
-<li>High-fidelity trajectory propagation</li>
-<li>NASA</li>
-<li>ESA</li>
-<li>JPL mission design</li>
+<li>Lower specific impulse than gridded ion thrusters</li>
+<li>Channel erosion</li>
+</ul>
+</section>
+<section id="typical-performance-3" class="level3">
+<h3 class="anchored" data-anchor-id="typical-performance-3">Typical Performance</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Specific Impulse</td>
+<td>1000–2500 s</td>
+</tr>
+<tr class="even">
+<td>Thrust</td>
+<td>10 mN–5 N</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="applications-2" class="level3">
+<h3 class="anchored" data-anchor-id="applications-2">Applications</h3>
+<ul>
+<li>GEO satellites</li>
+<li>Orbit raising</li>
+<li>Constellation maintenance</li>
 </ul>
 <hr>
 </section>
 </section>
-<section id="comparison-of-different-definitions" class="level1" data-number="9">
-<h1 data-number="9"><span class="header-section-number">9</span> Comparison of Different Definitions</h1>
+<section id="electrospray-thrusters" class="level2">
+<h2 class="anchored" data-anchor-id="electrospray-thrusters">6.3 Electrospray Thrusters</h2>
+<section id="working-principle-4" class="level3">
+<h3 class="anchored" data-anchor-id="working-principle-4">Working Principle</h3>
+<p>Electrostatic forces extract charged droplets or ions from a conductive liquid.</p>
+<p>A Taylor cone forms at the emitter tip.</p>
+<p>The electric field is approximately</p>
+<p><span class="math display">\[
+E = \frac{V}{d}
+\]</span></p>
+<p>where:</p>
+<ul>
+<li><span class="math inline">\(V\)</span> = applied voltage</li>
+<li><span class="math inline">\(d\)</span> = emitter spacing</li>
+</ul>
+</section>
+<section id="advantages-4" class="level3">
+<h3 class="anchored" data-anchor-id="advantages-4">Advantages</h3>
+<ul>
+<li>Extremely compact</li>
+<li>Suitable for CubeSats</li>
+<li>Scalable architecture</li>
+</ul>
+</section>
+<section id="disadvantages-4" class="level3">
+<h3 class="anchored" data-anchor-id="disadvantages-4">Disadvantages</h3>
+<ul>
+<li>Limited thrust</li>
+<li>Manufacturing complexity</li>
+</ul>
+</section>
+<section id="typical-performance-4" class="level3">
+<h3 class="anchored" data-anchor-id="typical-performance-4">Typical Performance</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Thrust</td>
+<td>μN–mN</td>
+</tr>
+<tr class="even">
+<td>Specific Impulse</td>
+<td>500–3000 s</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+</section>
+<section id="feep-thrusters" class="level2">
+<h2 class="anchored" data-anchor-id="feep-thrusters">6.4 FEEP Thrusters</h2>
+<section id="field-emission-electric-propulsion" class="level3">
+<h3 class="anchored" data-anchor-id="field-emission-electric-propulsion">Field Emission Electric Propulsion</h3>
+<p>FEEP thrusters accelerate ions extracted directly from liquid metals.</p>
+</section>
+<section id="typical-propellants" class="level3">
+<h3 class="anchored" data-anchor-id="typical-propellants">Typical Propellants</h3>
+<ul>
+<li>Indium</li>
+<li>Cesium</li>
+</ul>
+</section>
+<section id="advantages-5" class="level3">
+<h3 class="anchored" data-anchor-id="advantages-5">Advantages</h3>
+<ul>
+<li>Extremely high precision</li>
+<li>Very high specific impulse</li>
+</ul>
+</section>
+<section id="applications-3" class="level3">
+<h3 class="anchored" data-anchor-id="applications-3">Applications</h3>
+<ul>
+<li>Precision formation flying</li>
+<li>Drag-free spacecraft</li>
+<li>Scientific missions</li>
+</ul>
+</section>
+<section id="typical-performance-5" class="level3">
+<h3 class="anchored" data-anchor-id="typical-performance-5">Typical Performance</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Specific Impulse</td>
+<td>4000–12000 s</td>
+</tr>
+<tr class="even">
+<td>Thrust</td>
+<td>μN</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+</section>
+</section>
+<section id="electromagnetic-propulsion" class="level1">
+<h1>Electromagnetic Propulsion</h1>
+<p>Electromagnetic propulsion systems accelerate plasma using Lorentz forces.</p>
+<hr>
+<section id="pulsed-plasma-thrusters-ppt" class="level2">
+<h2 class="anchored" data-anchor-id="pulsed-plasma-thrusters-ppt">7.1 Pulsed Plasma Thrusters (PPT)</h2>
+<section id="working-principle-5" class="level3">
+<h3 class="anchored" data-anchor-id="working-principle-5">Working Principle</h3>
+<p>A capacitor discharges through a solid Teflon propellant.</p>
+<p>The resulting plasma is accelerated electromagnetically.</p>
+</section>
+<section id="advantages-6" class="level3">
+<h3 class="anchored" data-anchor-id="advantages-6">Advantages</h3>
+<ul>
+<li>Very simple</li>
+<li>Compact</li>
+<li>Proven technology</li>
+</ul>
+</section>
+<section id="disadvantages-5" class="level3">
+<h3 class="anchored" data-anchor-id="disadvantages-5">Disadvantages</h3>
+<ul>
+<li>Low efficiency</li>
+<li>Limited thrust</li>
+</ul>
+</section>
+<section id="typical-performance-6" class="level3">
+<h3 class="anchored" data-anchor-id="typical-performance-6">Typical Performance</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Specific Impulse</td>
+<td>500–2000 s</td>
+</tr>
+<tr class="even">
+<td>Thrust</td>
+<td>μN–mN</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+</section>
+<section id="magnetoplasmadynamic-thrusters-mpd" class="level2">
+<h2 class="anchored" data-anchor-id="magnetoplasmadynamic-thrusters-mpd">7.2 Magnetoplasmadynamic Thrusters (MPD)</h2>
+<section id="working-principle-6" class="level3">
+<h3 class="anchored" data-anchor-id="working-principle-6">Working Principle</h3>
+<p>Plasma carrying electrical current interacts with magnetic fields.</p>
+<p>The resulting Lorentz force accelerates the plasma.</p>
+<p><span class="math display">\[
+\mathbf{F}=\mathbf{J}\times\mathbf{B}
+\]</span></p>
+<p>where:</p>
+<ul>
+<li><span class="math inline">\(\mathbf{J}\)</span> = current density</li>
+<li><span class="math inline">\(\mathbf{B}\)</span> = magnetic field</li>
+</ul>
+</section>
+<section id="advantages-7" class="level3">
+<h3 class="anchored" data-anchor-id="advantages-7">Advantages</h3>
+<ul>
+<li>Very high thrust</li>
+<li>Very high specific impulse</li>
+</ul>
+</section>
+<section id="disadvantages-6" class="level3">
+<h3 class="anchored" data-anchor-id="disadvantages-6">Disadvantages</h3>
+<ul>
+<li>Extremely high power requirements</li>
+</ul>
+<p>Typical power levels:</p>
+<p><span class="math display">\[
+100\,kW - 1\,MW
+\]</span></p>
+</section>
+<section id="potential-applications" class="level3">
+<h3 class="anchored" data-anchor-id="potential-applications">Potential Applications</h3>
+<ul>
+<li>Human Mars missions</li>
+<li>Cargo transport</li>
+<li>Deep-space exploration</li>
+</ul>
+<hr>
+</section>
+</section>
+</section>
+<section id="advanced-low-thrust-concepts" class="level1">
+<h1>Advanced Low-Thrust Concepts</h1>
+<section id="solar-sails" class="level2">
+<h2 class="anchored" data-anchor-id="solar-sails">8.1 Solar Sails</h2>
+<section id="principle-1" class="level3">
+<h3 class="anchored" data-anchor-id="principle-1">Principle</h3>
+<p>Solar sails utilize momentum transfer from sunlight.</p>
+<p>The solar radiation pressure is</p>
+<p><span class="math display">\[
+P=\frac{2S}{c}
+\]</span></p>
+<p>where:</p>
+<ul>
+<li><span class="math inline">\(S\)</span> = solar flux</li>
+<li><span class="math inline">\(c\)</span> = speed of light</li>
+</ul>
+</section>
+<section id="advantages-8" class="level3">
+<h3 class="anchored" data-anchor-id="advantages-8">Advantages</h3>
+<ul>
+<li>No propellant required</li>
+<li>Unlimited mission duration</li>
+</ul>
+</section>
+<section id="disadvantages-7" class="level3">
+<h3 class="anchored" data-anchor-id="disadvantages-7">Disadvantages</h3>
+<ul>
+<li>Extremely low acceleration</li>
+<li>Large sail structures required</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="nuclear-electric-propulsion-nep" class="level2">
+<h2 class="anchored" data-anchor-id="nuclear-electric-propulsion-nep">8.2 Nuclear Electric Propulsion (NEP)</h2>
+<section id="principle-2" class="level3">
+<h3 class="anchored" data-anchor-id="principle-2">Principle</h3>
+<p>A nuclear reactor generates electrical power.</p>
+<p>The electricity drives electric thrusters.</p>
+</section>
+<section id="advantages-9" class="level3">
+<h3 class="anchored" data-anchor-id="advantages-9">Advantages</h3>
+<ul>
+<li>High available power</li>
+<li>Deep-space capability</li>
+<li>Independent of solar distance</li>
+</ul>
+</section>
+<section id="applications-4" class="level3">
+<h3 class="anchored" data-anchor-id="applications-4">Applications</h3>
+<ul>
+<li>Mars missions</li>
+<li>Outer planet exploration</li>
+<li>Cargo transportation</li>
+</ul>
+<hr>
+</section>
+</section>
+</section>
+<section id="low-thrust-mission-design" class="level1">
+<h1>Low-Thrust Mission Design</h1>
+<p>Low-thrust trajectories differ fundamentally from impulsive trajectories.</p>
+<p>For chemical propulsion:</p>
+<p><span class="math display">\[
+\Delta V \rightarrow \text{instantaneous}
+\]</span></p>
+<p>For low-thrust propulsion:</p>
+<p><span class="math display">\[
+\Delta V \rightarrow \text{continuous}
+\]</span></p>
+<p>The spacecraft continuously accelerates over long durations.</p>
+<p>As a result:</p>
+<ul>
+<li>Orbital elements change continuously.</li>
+<li>Optimization becomes more complex.</li>
+<li>Transfer times increase significantly.</li>
+</ul>
+<hr>
+</section>
+<section id="trajectory-optimization-methods" class="level1">
+<h1>Trajectory Optimization Methods</h1>
+<section id="direct-methods" class="level2">
+<h2 class="anchored" data-anchor-id="direct-methods">10.1 Direct Methods</h2>
+<p>The trajectory is divided into multiple segments.</p>
+<p>Optimization variables include:</p>
+<ul>
+<li>Thrust magnitude</li>
+<li>Thrust direction</li>
+<li>Flight time</li>
+</ul>
+<section id="advantages-10" class="level3">
+<h3 class="anchored" data-anchor-id="advantages-10">Advantages</h3>
+<ul>
+<li>Numerically robust</li>
+<li>Suitable for complex missions</li>
+<li>Widely used</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="indirect-methods" class="level2">
+<h2 class="anchored" data-anchor-id="indirect-methods">10.2 Indirect Methods</h2>
+<p>Based on optimal control theory.</p>
+<section id="pontryagins-maximum-principle" class="level3">
+<h3 class="anchored" data-anchor-id="pontryagins-maximum-principle">Pontryagin’s Maximum Principle</h3>
+<p>Provides necessary conditions for optimality.</p>
+</section>
+<section id="advantages-11" class="level3">
+<h3 class="anchored" data-anchor-id="advantages-11">Advantages</h3>
+<ul>
+<li>Highly accurate</li>
+<li>Produces optimal solutions</li>
+</ul>
+</section>
+<section id="disadvantages-8" class="level3">
+<h3 class="anchored" data-anchor-id="disadvantages-8">Disadvantages</h3>
+<ul>
+<li>Sensitive to initial guesses</li>
+<li>Difficult implementation</li>
+</ul>
+<hr>
+</section>
+</section>
+</section>
+<section id="typical-low-thrust-trajectories" class="level1">
+<h1>Typical Low-Thrust Trajectories</h1>
+<section id="spiral-orbit-raising" class="level2">
+<h2 class="anchored" data-anchor-id="spiral-orbit-raising">Spiral Orbit Raising</h2>
+<p>Instead of a Hohmann transfer, the spacecraft gradually spirals outward.</p>
+<p>Applications:</p>
+<ul>
+<li>LEO to GEO transfer</li>
+<li>Orbit raising</li>
+</ul>
+<hr>
+</section>
+<section id="interplanetary-transfers" class="level2">
+<h2 class="anchored" data-anchor-id="interplanetary-transfers">Interplanetary Transfers</h2>
+<p>Continuous thrust changes:</p>
+<ul>
+<li>Orbital energy</li>
+<li>Inclination</li>
+<li>Eccentricity</li>
+</ul>
+<p>simultaneously.</p>
+<hr>
+</section>
+<section id="asteroid-rendezvous" class="level2">
+<h2 class="anchored" data-anchor-id="asteroid-rendezvous">Asteroid Rendezvous</h2>
+<p>Low-thrust propulsion allows gradual matching of an asteroid’s velocity and orbit.</p>
+<hr>
+</section>
+</section>
+<section id="applications-5" class="level1">
+<h1>Applications</h1>
+<section id="station-keeping" class="level2">
+<h2 class="anchored" data-anchor-id="station-keeping">Station Keeping</h2>
+<p>Compensates for:</p>
+<ul>
+<li>Solar radiation pressure</li>
+<li>Atmospheric drag</li>
+<li>Gravitational perturbations</li>
+</ul>
+<hr>
+</section>
+<section id="orbit-raising" class="level2">
+<h2 class="anchored" data-anchor-id="orbit-raising">Orbit Raising</h2>
+<p>Used extensively by commercial communications satellites.</p>
+<hr>
+</section>
+<section id="formation-flying" class="level2">
+<h2 class="anchored" data-anchor-id="formation-flying">Formation Flying</h2>
+<p>Maintains precise relative positioning between spacecraft.</p>
+<hr>
+</section>
+<section id="collision-avoidance" class="level2">
+<h2 class="anchored" data-anchor-id="collision-avoidance">Collision Avoidance</h2>
+<p>Provides efficient orbit adjustments in congested orbital environments.</p>
+<hr>
+</section>
+<section id="deep-space-exploration" class="level2">
+<h2 class="anchored" data-anchor-id="deep-space-exploration">Deep-Space Exploration</h2>
+<p>Enabled missions such as:</p>
+<ul>
+<li>SMART-1</li>
+<li>Deep Space 1</li>
+<li>Dawn</li>
+<li>BepiColombo</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="small-satellites-and-cubesats" class="level1">
+<h1>Small Satellites and CubeSats</h1>
+<p>Historically, CubeSats lacked onboard propulsion.</p>
+<p>Modern electric propulsion systems provide:</p>
+<ul>
+<li>Orbit maintenance</li>
+<li>Formation flying</li>
+<li>End-of-life deorbiting</li>
+<li>Lunar mission capability</li>
+<li>Interplanetary mission capability</li>
+</ul>
+<p>Key drivers include:</p>
+<ul>
+<li>Reduced spacecraft mass</li>
+<li>Increased mission flexibility</li>
+<li>Growing commercial small-satellite markets</li>
+</ul>
+<hr>
+</section>
+<section id="current-challenges" class="level1">
+<h1>Current Challenges</h1>
+<section id="power-limitations" class="level2">
+<h2 class="anchored" data-anchor-id="power-limitations">14.1 Power Limitations</h2>
+<p>Electric propulsion performance depends strongly on available power.</p>
+<p>The thrust-to-power relationship can be approximated as</p>
+<p><span class="math display">\[
+T=\frac{2\eta P}{v_e}
+\]</span></p>
+<p>where:</p>
+<ul>
+<li><span class="math inline">\(\eta\)</span> = efficiency</li>
+<li><span class="math inline">\(P\)</span> = electrical power</li>
+<li><span class="math inline">\(v_e\)</span> = exhaust velocity</li>
+</ul>
+<p>Higher exhaust velocity generally requires greater electrical power.</p>
+<hr>
+</section>
+<section id="thermal-management" class="level2">
+<h2 class="anchored" data-anchor-id="thermal-management">14.2 Thermal Management</h2>
+<p>Power electronics and plasma generation create significant thermal loads.</p>
+<p>Challenges include:</p>
+<ul>
+<li>Radiator sizing</li>
+<li>Heat rejection</li>
+<li>Thermal control integration</li>
+</ul>
+<hr>
+</section>
+<section id="lifetime" class="level2">
+<h2 class="anchored" data-anchor-id="lifetime">14.3 Lifetime</h2>
+<p>Common degradation mechanisms include:</p>
+<ul>
+<li>Grid erosion</li>
+<li>Cathode wear</li>
+<li>Plasma-induced material degradation</li>
+</ul>
+<hr>
+</section>
+<section id="miniaturization" class="level2">
+<h2 class="anchored" data-anchor-id="miniaturization">14.4 Miniaturization</h2>
+<p>Small satellites require:</p>
+<ul>
+<li>Compact power processing units</li>
+<li>Lightweight tanks</li>
+<li>Integrated propulsion modules</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="future-trends" class="level1">
+<h1>Future Trends</h1>
+<p>Future developments are expected in:</p>
+<ol type="1">
+<li>High-power Hall thrusters</li>
+<li>Advanced ion thrusters</li>
+<li>Electrospray propulsion</li>
+<li>CubeSat propulsion modules</li>
+<li>Nuclear electric propulsion</li>
+<li>Hybrid chemical-electric systems</li>
+<li>Autonomous trajectory optimization</li>
+<li>On-orbit servicing spacecraft</li>
+<li>Deep-space small-satellite missions</li>
+</ol>
+<p>Emerging dual-mode propulsion systems may combine chemical and electric propulsion using a common propellant supply.</p>
+<hr>
+</section>
+<section id="low-thrust-propulsion-and-gravity-assist-missions" class="level1">
+<h1>Low-Thrust Propulsion and Gravity Assist Missions</h1>
+<p>One of the most important applications of low-thrust propulsion is in conjunction with gravity-assist trajectories and multiple gravity-assist (MGA) missions. Modern deep-space missions often combine electric propulsion with planetary flybys to maximize mission capability while minimizing propellant consumption.</p>
+<hr>
+<section id="why-are-gravity-assists-used" class="level2">
+<h2 class="anchored" data-anchor-id="why-are-gravity-assists-used">12.1 Why Are Gravity Assists Used?</h2>
+<p>For deep-space missions, reaching distant planets or small bodies often requires a very large heliocentric velocity change.</p>
+<p>Examples include:</p>
+<ul>
+<li>Missions to Mercury</li>
+<li>Outer planet exploration</li>
+<li>Asteroid rendezvous missions</li>
+<li>Comet missions</li>
+</ul>
+<p>Using chemical propulsion alone would require extremely large launch vehicles or impractically high propellant masses.</p>
+<p>A gravity assist allows a spacecraft to exchange energy and angular momentum with a planet without expending significant onboard propellant.</p>
+<p>In the heliocentric frame:</p>
+<p><span class="math display">\[
+\mathbf{V}_{\infty,in} \neq \mathbf{V}_{\infty,out}
+\]</span></p>
+<p>and the spacecraft can gain or lose heliocentric energy through the flyby.</p>
+<p>The planet provides the energy change through its orbital motion around the Sun.</p>
+<section id="benefits-of-gravity-assists" class="level3">
+<h3 class="anchored" data-anchor-id="benefits-of-gravity-assists">Benefits of Gravity Assists</h3>
+<ul>
+<li>Large effective ΔV without propellant expenditure</li>
+<li>Reduced launch mass</li>
+<li>Increased payload mass</li>
+<li>Access to otherwise unreachable destinations</li>
+<li>Lower mission cost</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="why-not-use-pure-chemical-propulsion" class="level2">
+<h2 class="anchored" data-anchor-id="why-not-use-pure-chemical-propulsion">12.2 Why Not Use Pure Chemical Propulsion?</h2>
+<p>A purely chemical mission would require:</p>
+<ul>
+<li>Large impulsive burns</li>
+<li>High propellant fractions</li>
+<li>Larger launch vehicles</li>
+</ul>
+<p>From the rocket equation:</p>
+<p><span class="math display">\[
+\Delta V = I_{sp} g_0 \ln\left(\frac{m_0}{m_f}\right)
+\]</span></p>
+<p>A large ΔV requirement causes the mass ratio</p>
+<p><span class="math display">\[
+\frac{m_0}{m_f}
+\]</span></p>
+<p>to increase exponentially.</p>
+<p>Consequently:</p>
+<ul>
+<li>Payload mass decreases</li>
+<li>Launch mass increases</li>
+<li>Mission cost rises dramatically</li>
+</ul>
+<p>For missions to Mercury, Jupiter, Saturn, or beyond, a purely chemical approach may become impractical.</p>
+<hr>
+</section>
+<section id="why-not-use-gravity-assists-alone" class="level2">
+<h2 class="anchored" data-anchor-id="why-not-use-gravity-assists-alone">12.3 Why Not Use Gravity Assists Alone?</h2>
+<p>Gravity assists are powerful but have limitations.</p>
+<p>A flyby can only occur if:</p>
+<ol type="1">
+<li>The spacecraft reaches the planet.</li>
+<li>The planetary alignment is favorable.</li>
+<li>The encounter geometry produces the desired energy change.</li>
+</ol>
+<p>Gravity assists alone cannot provide complete mission flexibility.</p>
+<p>Challenges include:</p>
+<ul>
+<li>Long waiting periods for launch windows</li>
+<li>Restricted trajectory options</li>
+<li>Limited control over encounter conditions</li>
+</ul>
+<p>Therefore, propulsion is still required to:</p>
+<ul>
+<li>Reach the flyby planet</li>
+<li>Correct trajectory errors</li>
+<li>Adjust flyby geometry</li>
+<li>Perform final rendezvous operations</li>
+</ul>
+<hr>
+</section>
+<section id="why-combine-low-thrust-propulsion-with-gravity-assists" class="level2">
+<h2 class="anchored" data-anchor-id="why-combine-low-thrust-propulsion-with-gravity-assists">12.4 Why Combine Low-Thrust Propulsion with Gravity Assists?</h2>
+<p>Low-thrust propulsion and gravity assists complement each other extremely well.</p>
+<section id="gravity-assist-provides" class="level3">
+<h3 class="anchored" data-anchor-id="gravity-assist-provides">Gravity Assist Provides</h3>
+<ul>
+<li>Large energy changes</li>
+<li>Major orbit shaping</li>
+<li>Free heliocentric ΔV</li>
+</ul>
+</section>
+<section id="low-thrust-provides" class="level3">
+<h3 class="anchored" data-anchor-id="low-thrust-provides">Low-Thrust Provides</h3>
+<ul>
+<li>Continuous trajectory control</li>
+<li>Precise targeting</li>
+<li>Orbit adjustment between flybys</li>
+<li>Flexibility in launch opportunities</li>
+</ul>
+<p>The combination allows missions to achieve much larger overall velocity changes than either method alone.</p>
+<hr>
+</section>
+</section>
+<section id="multiple-gravity-assist-mga-missions" class="level2">
+<h2 class="anchored" data-anchor-id="multiple-gravity-assist-mga-missions">12.5 Multiple Gravity Assist (MGA) Missions</h2>
+<p>A Multiple Gravity Assist (MGA) trajectory uses several planetary flybys.</p>
+<p>Typical sequence:</p>
+<p><span class="math display">\[
+Earth \rightarrow Venus \rightarrow Venus \rightarrow Mercury
+\]</span></p>
+<p>or</p>
+<p><span class="math display">\[
+Earth \rightarrow Earth \rightarrow Jupiter \rightarrow Saturn
+\]</span></p>
+<p>Each flyby modifies:</p>
+<ul>
+<li>Orbital energy</li>
+<li>Orbital inclination</li>
+<li>Orbital eccentricity</li>
+<li>Flight direction</li>
+</ul>
+<p>The cumulative effect can produce enormous heliocentric velocity changes.</p>
+<hr>
+</section>
+<section id="why-low-thrust-is-especially-useful-in-mga-missions" class="level2">
+<h2 class="anchored" data-anchor-id="why-low-thrust-is-especially-useful-in-mga-missions">12.6 Why Low-Thrust is Especially Useful in MGA Missions</h2>
+<p>Between planetary encounters, a spacecraft may spend months or years in interplanetary space.</p>
+<p>During these phases, low-thrust propulsion can:</p>
+<section id="modify-arrival-conditions" class="level3">
+<h3 class="anchored" data-anchor-id="modify-arrival-conditions">Modify Arrival Conditions</h3>
+<p>The arrival velocity at a planet can be adjusted gradually.</p>
+<p>This allows:</p>
+<ul>
+<li>Better flyby geometry</li>
+<li>Improved energy gain</li>
+<li>Greater mission flexibility</li>
+</ul>
+<hr>
+</section>
+<section id="expand-launch-windows" class="level3">
+<h3 class="anchored" data-anchor-id="expand-launch-windows">Expand Launch Windows</h3>
+<p>Pure gravity-assist missions often depend on highly specific planetary alignments.</p>
+<p>Low-thrust propulsion can compensate for small trajectory deviations and reduce dependence on exact launch opportunities.</p>
+<hr>
+</section>
+<section id="reduce-required-flybys" class="level3">
+<h3 class="anchored" data-anchor-id="reduce-required-flybys">Reduce Required Flybys</h3>
+<p>Continuous propulsion can provide part of the required ΔV.</p>
+<p>As a result:</p>
+<ul>
+<li>Fewer planetary encounters may be needed</li>
+<li>Mission complexity decreases</li>
+</ul>
+<hr>
+</section>
+<section id="enable-final-rendezvous" class="level3">
+<h3 class="anchored" data-anchor-id="enable-final-rendezvous">Enable Final Rendezvous</h3>
+<p>Gravity assists primarily change heliocentric velocity.</p>
+<p>However, rendezvous requires matching the target body’s velocity.</p>
+<p>Low-thrust propulsion is highly efficient for gradually reducing relative velocity and achieving orbit insertion.</p>
+<hr>
+</section>
+</section>
+<section id="comparison-with-other-mission-architectures" class="level2">
+<h2 class="anchored" data-anchor-id="comparison-with-other-mission-architectures">12.7 Comparison with Other Mission Architectures</h2>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 22%">
-<col style="width: 16%">
 <col style="width: 33%">
-<col style="width: 26%">
+<col style="width: 33%">
+<col style="width: 33%">
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Definition</th>
-<th style="text-align: left;">Formula</th>
-<th style="text-align: left;">Physical Meaning</th>
-<th style="text-align: left;">Applications</th>
+<th>Method</th>
+<th>Advantages</th>
+<th>Limitations</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><strong>Laplace SOI</strong></td>
-<td style="text-align: left;"><span class="math inline">\(a\left(\frac{m_p}{m_s}\right)^{2/5}\)</span></td>
-<td style="text-align: left;">Region where the planet-centered two-body approximation becomes more accurate</td>
-<td style="text-align: left;">Patched conics, interplanetary missions</td>
+<td>Chemical Only</td>
+<td>Fast transfers, simple operations</td>
+<td>High propellant mass</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><strong>Hill Sphere</strong></td>
-<td style="text-align: left;"><span class="math inline">\(a\left(\frac{m_p}{3m_s}\right)^{1/3}\)</span></td>
-<td style="text-align: left;">Region where satellites remain gravitationally bound</td>
-<td style="text-align: left;">CR3BP, stability, Lagrange points</td>
+<td>Gravity Assist Only</td>
+<td>Very low propellant use</td>
+<td>Limited flexibility</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><strong>Equal-force Radius</strong></td>
-<td style="text-align: left;"><span class="math inline">\(a\sqrt{\frac{m_p}{m_s}}\)</span></td>
-<td style="text-align: left;">Planetary and solar gravitational forces are equal</td>
-<td style="text-align: left;">Simple conceptual comparison</td>
+<td>Low-Thrust Only</td>
+<td>High efficiency, flexible</td>
+<td>Long transfer times</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><strong>Roche Limit</strong></td>
-<td style="text-align: left;">Depends on radii and densities</td>
-<td style="text-align: left;">Tidal disruption limit</td>
-<td style="text-align: left;">Rings, tidal forces</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong>Capture Radius</strong></td>
-<td style="text-align: left;">Problem dependent</td>
-<td style="text-align: left;">Region of gravitational capture</td>
-<td style="text-align: left;">Planet formation, asteroids</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>Effective SOI</strong></td>
-<td style="text-align: left;">No fixed formula</td>
-<td style="text-align: left;">Numerical region of dominant influence</td>
-<td style="text-align: left;">High-fidelity mission analysis</td>
+<td>MGA + Low-Thrust</td>
+<td>Extremely efficient, highly capable</td>
+<td>Complex trajectory design</td>
 </tr>
 </tbody>
 </table>
+<p>For many deep-space missions, MGA combined with low-thrust propulsion provides the best balance between:</p>
+<ul>
+<li>Propellant consumption</li>
+<li>Mission duration</li>
+<li>Launch mass</li>
+<li>Payload capability</li>
+</ul>
 <hr>
 </section>
-<section id="summary" class="level1" data-number="10">
-<h1 data-number="10"><span class="header-section-number">10</span> Summary</h1>
-<p>Each definition answers a different question.</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 29%">
-<col style="width: 70%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Question</th>
-<th style="text-align: left;">Appropriate Definition</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Which two-body model should be used?</td>
-<td style="text-align: left;"><strong>Laplace SOI</strong></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Can a satellite remain bound to the planet?</td>
-<td style="text-align: left;"><strong>Hill Sphere</strong></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Where are the Sun’s and planet’s gravitational forces equal?</td>
-<td style="text-align: left;"><strong>Equal-force Radius</strong></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Where will tidal forces disrupt a satellite?</td>
-<td style="text-align: left;"><strong>Roche Limit</strong></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Can an object be gravitationally captured?</td>
-<td style="text-align: left;"><strong>Capture Radius</strong></td>
-</tr>
-</tbody>
-</table>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>For interplanetary mission design and the patched-conic approximation, the <strong>Laplace Sphere of Influence</strong> is the most commonly used definition.</p>
-</div>
-</div>
+<section id="examples-of-mga-and-low-thrust-missions" class="level2">
+<h2 class="anchored" data-anchor-id="examples-of-mga-and-low-thrust-missions">12.8 Examples of MGA and Low-Thrust Missions</h2>
+<section id="dawn-mission" class="level3">
+<h3 class="anchored" data-anchor-id="dawn-mission">Dawn Mission</h3>
+<p>Trajectory:</p>
+<p><span class="math display">\[
+Earth \rightarrow Vesta \rightarrow Ceres
+\]</span></p>
+<p>Used:</p>
+<ul>
+<li>Ion propulsion</li>
+<li>Continuous low-thrust spirals</li>
+<li>Asteroid rendezvous operations</li>
+</ul>
+<p>Advantages:</p>
+<ul>
+<li>Multiple target visits</li>
+<li>Large total ΔV</li>
+<li>Minimal propellant mass</li>
+</ul>
+<hr>
+</section>
+<section id="bepicolombo-mission" class="level3">
+<h3 class="anchored" data-anchor-id="bepicolombo-mission">BepiColombo Mission</h3>
+<p>Trajectory:</p>
+<p><span class="math display">\[
+Earth \rightarrow Venus \rightarrow Venus \rightarrow Mercury \rightarrow Mercury \rightarrow Mercury
+\rightarrow Mercury \rightarrow Mercury \rightarrow Mercury
+\]</span></p>
+<p>Uses:</p>
+<ul>
+<li>Solar electric propulsion</li>
+<li>Multiple gravity assists</li>
+</ul>
+<p>Purpose:</p>
+<p>Mercury is difficult to reach because a spacecraft must lose a large amount of heliocentric energy.</p>
+<p>The combined MGA and electric propulsion strategy drastically reduces propellant requirements.</p>
+<hr>
+</section>
+<section id="smart-1-mission" class="level3">
+<h3 class="anchored" data-anchor-id="smart-1-mission">SMART-1 Mission</h3>
+<p>Used:</p>
+<ul>
+<li>Solar electric propulsion</li>
+<li>Lunar transfer spirals</li>
+</ul>
+<p>Demonstrated the practicality of low-thrust navigation and trajectory optimization.</p>
+<hr>
+</section>
+</section>
+<section id="limitations-of-combining-low-thrust-and-mga" class="level2">
+<h2 class="anchored" data-anchor-id="limitations-of-combining-low-thrust-and-mga">12.9 Limitations of Combining Low-Thrust and MGA</h2>
+<p>Despite their advantages, combined MGA-low-thrust missions face several challenges.</p>
+<section id="long-mission-duration" class="level3">
+<h3 class="anchored" data-anchor-id="long-mission-duration">Long Mission Duration</h3>
+<p>Continuous low thrust results in:</p>
+<ul>
+<li>Months to years of transfer time</li>
+<li>Increased operational costs</li>
+</ul>
+<hr>
+</section>
+<section id="complex-optimization" class="level3">
+<h3 class="anchored" data-anchor-id="complex-optimization">Complex Optimization</h3>
+<p>The trajectory design problem becomes highly nonlinear.</p>
+<p>Variables include:</p>
+<ul>
+<li>Flyby altitudes</li>
+<li>Flyby dates</li>
+<li>Thrust direction</li>
+<li>Thrust magnitude</li>
+<li>Time of flight</li>
+</ul>
+<p>Advanced optimal control techniques are typically required.</p>
+<hr>
+</section>
+<section id="navigation-accuracy-requirements" class="level3">
+<h3 class="anchored" data-anchor-id="navigation-accuracy-requirements">Navigation Accuracy Requirements</h3>
+<p>Small targeting errors can significantly affect subsequent flybys.</p>
+<p>Therefore:</p>
+<ul>
+<li>Precise navigation is required</li>
+<li>Frequent trajectory corrections may be necessary</li>
+</ul>
+<hr>
+</section>
+<section id="power-constraints" class="level3">
+<h3 class="anchored" data-anchor-id="power-constraints">Power Constraints</h3>
+<p>Electric propulsion performance depends on available electrical power.</p>
+<p>At large heliocentric distances:</p>
+<p><span class="math display">\[
+P \propto \frac{1}{r^2}
+\]</span></p>
+<p>where:</p>
+<ul>
+<li><span class="math inline">\(P\)</span> = available solar power</li>
+<li><span class="math inline">\(r\)</span> = distance from the Sun</li>
+</ul>
+<p>Reduced power decreases available thrust.</p>
+<hr>
+</section>
+</section>
+<section id="key-takeaway" class="level2">
+<h2 class="anchored" data-anchor-id="key-takeaway">12.10 Key Takeaway</h2>
+<p>Gravity assists provide large, essentially “free” changes in heliocentric energy, while low-thrust propulsion provides continuous and highly efficient trajectory control. Individually, each technique has significant limitations. Combined, they form one of the most powerful mission design strategies available, enabling complex interplanetary missions that would be impractical or impossible using chemical propulsion alone.</p>
+<p>For this reason, modern deep-space missions such as Dawn, SMART-1, and BepiColombo rely heavily on the combination of multiple gravity assists and low-thrust electric propulsion.</p>
+</section>
+</section>
+<section id="key-conclusions" class="level1">
+<h1>Key Conclusions</h1>
+<ul>
+<li>Low-thrust propulsion provides significantly higher propellant efficiency than chemical propulsion.</li>
+<li>Electric propulsion is now a mainstream technology for orbit raising, station keeping, and deep-space missions.</li>
+<li>Hall thrusters and ion thrusters represent the most mature and widely deployed systems.</li>
+<li>Electrospray and FEEP technologies are emerging as promising solutions for CubeSats and precision spacecraft.</li>
+<li>Low-thrust mission design requires continuous-thrust trajectory optimization methods rather than impulsive approximations.</li>
+<li>Future lunar, Martian, asteroid, and outer-planet missions are expected to rely increasingly on low-thrust propulsion systems.</li>
+</ul>
+<hr>
+</section>
+<section id="references" class="level1">
+<h1>References</h1>
+<section id="primary-sources" class="level2">
+<h2 class="anchored" data-anchor-id="primary-sources">Primary Sources</h2>
+<ol type="1">
+<li><p>Dankanich, J. W. <em>Low-Thrust Propulsion Technologies, Mission Design, and Application.</em></p></li>
+<li><p>O’Reilly, D., Herdrich, G., and Kavanagh, D. F. <em>Electric Propulsion Methods for Small Satellites: A Review.</em> Aerospace, 2021.</p></li>
+<li><p>Miller, D. et al. <em>Survey and Performance Evaluation of Small-Satellite Propulsion Technologies.</em></p></li>
+</ol>
+</section>
+<section id="additional-references" class="level2">
+<h2 class="anchored" data-anchor-id="additional-references">Additional References</h2>
+<ol start="4" type="1">
+<li><p>Sutton, G. P., and Biblarz, O. <em>Rocket Propulsion Elements.</em></p></li>
+<li><p>Wertz, J. R., Everett, D. F., and Puschell, J. J. <em>Space Mission Engineering: The New SMAD.</em></p></li>
+<li><p>Choueiri, E. Y. <em>A Critical History of Electric Propulsion.</em></p></li>
+<li><p>Jahn, R. G., and Choueiri, E. Y. <em>Electric Propulsion.</em></p></li>
+<li><p>Fortescue, P., Stark, J., and Swinerd, G. <em>Spacecraft Systems Engineering.</em></p></li>
+</ol>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
